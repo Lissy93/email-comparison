@@ -1,0 +1,25 @@
+{
+  "name": "private-email-comparison",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript example starter project",
+  "scripts": {
+    "start": "parcel",
+    "dev": "parcel serve",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-yaml": "2.5.0",
+    "parcel": "^2.5.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "dependencies": {
+    "gridjs": "^5.0.2"
+  }
+}
