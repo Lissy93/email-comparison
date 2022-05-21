@@ -1,0 +1,15 @@
+{
+  "short_name":"Email Comparison",
+  "name":"Email Security Comparison",
+  "background_color":"#4445e0",
+  "theme_color":"#4445e0",
+  "display":"standalone",
+  "orientation":"any",
+  "start_url":"https://lissy93.github.io/email-comparison",
+  "scope":"https://lissy93.github.io/email-comparison",
+  "icons":[
+    {"src":"android-chrome-512x512.png","sizes":"512x512","type":"image/png"},
+    {"src":"android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+    {"src":"apple-touch-icon.png","sizes":"180x180","type":"image/png"}
+  ]
+}
