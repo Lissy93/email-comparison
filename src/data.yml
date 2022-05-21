@@ -1,0 +1,574 @@
+
+# List of mail providers (in no order)
+# Level indicates color (0 = N/A, 1 = Great, 2 = Okay, 3 = Bad)
+mailProviders:
+# ProtonMail
+- name: ProtonMail
+  link: ABC
+  jurisdiction:
+    text: Switzerland
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: 'Yes'
+    level: 1
+  pricing:
+    text: |
+      Free Plan - 500MB, 1 address, no custom domain.
+      Paid plans start from €5 and allow for additional
+      features, custom domain, and increased message volume
+    level: 1
+  domainSupport:
+    text: |
+      Yes
+      (Plus Plan, €5.00/m)
+    level: 2
+  aliases:
+    text: Yes (Professional Plan, €8.00)
+    level: 2
+  webClientAccess:
+    text: Yes, but through Bridge
+    level: 2
+  securityAudit:
+    text: Yes (2021, by Securitum)
+    level: 1
+  acceptsCrypto:
+    text: Yes (BTC only)
+    level: 1
+  personalInfoRequired:
+    text: Recovery Email Only
+    level: 1
+
+# Tutanota
+- name: Tutanota
+  link: ABC
+  jurisdiction:
+    text: Germany (14 Eyes)
+    level: 1
+  encryption:
+    text: Hybrid AES + RSA
+    level: 2
+  openSource:
+    text: Client Apps Only
+    level: 2
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      Free Plan - 1GB, 1 address, no custom domain.
+      Paid plans start from €1 / month, and allow
+      for a custom domain, 5 alias addresses and
+      improved search and filters
+    level: 1
+  domainSupport:
+    text: |
+      Yes
+      (Premium Plan, €1.00/m)
+    level: 2
+  aliases:
+    text: €1 / month per 20 aliases. No catch-all
+    level: 2
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: Apparently, but not published
+    level: 2
+  acceptsCrypto:
+    text: No (But ProxyStore gift cards accepted
+    level: 2
+  personalInfoRequired:
+    text: None
+    level: 1
+
+# CriptText
+- name: CriptText
+  link: ABC
+  jurisdiction:
+    text: Decentralized
+    level: 0
+  encryption:
+    text: Signal Protocol
+    level: 2
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: N/A (No webmail)
+    level: 0
+  pricing:
+    text: Free
+    level: 1
+  domainSupport:
+    text: 'Yes'
+    level: 1
+  aliases:
+    text: 'No'
+    level: 3
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'N/A (No payment)'
+    level: 0
+  personalInfoRequired:
+    text: None
+    level: 1
+
+# Mailfence
+- name: Mailfence
+  link: ABC
+  jurisdiction:
+    text: Belgium (14 Eyes)
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      Free Plan - 500MB, 1 address, no custom domain.
+      Paid plans start from €2.50 and allow for custom
+      domain, 10 aliases, mail client access and
+      increased message volume
+    level: 1
+  domainSupport:
+    text: |
+      Yes
+      (Entry Plan, €2.50/m)
+    level: 2
+  aliases:
+    text: Yes (Entry Plan, €2.50)
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, POP3, SMTP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: No (Card, PayPal)
+    level: 3
+  personalInfoRequired:
+    text: Recovery Email Only
+    level: 1
+
+# Mailbox.org
+- name: Mailbox.org
+  link: ABC
+  jurisdiction:
+    text: Germany (14 Eyes)
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Starts at €1 / month.
+      Increases to €9 for all features and storage
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Standard Plan, €3.00/m)
+    level: 2
+  aliases:
+    text: 25 aliases (Standard Plan). No catch-all
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, POP3)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: |
+      Requires full name, location,
+      mobile number and recovery email
+    level: 3
+
+# Soverin
+- name: Soverin
+  link: ABC
+  jurisdiction:
+    text: Netherlands (9 Eyes)
+    level: 2
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan, flat fee of €3.25 / month for everything
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Paid Plan, €3.25)
+    level: 2
+  aliases:
+    text: Yes (Paid Plan, €3.25)
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: Requires phone number
+    level: 3
+
+# Posteo
+- name: Posteo
+  link: ABC
+  jurisdiction:
+    text: Germany (14 Eyes)
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: No free plan. Pricing is €1 / month
+    level: 2
+  domainSupport:
+    text: 'No'
+    level: 3
+  aliases:
+    text: Yes (€0.10/m per alias). No catch-all
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, POP3)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: No (Card, PayPal, Bank Transfer, Cash)
+    level: 3
+  personalInfoRequired:
+    text: Payment Info Only
+    level: 1
+
+# Runbox
+- name: Runbox
+  link: ABC
+  jurisdiction:
+    text: Norway (14 Eyes)
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: Client Apps Only
+    level: 2
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Starts at €14.95 / year for a
+      single domain, going up to €69.95 / year for
+      more storage and domains
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Micro Plan, €1.25/m)
+    level: 2
+  aliases:
+    text: €3.95 / year per 5 aliases. No catch-all
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, POP, SMTP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: Yes (BTC only)
+    level: 1
+  personalInfoRequired:
+    text: Full name, recovery email
+    level: 2
+
+# Kolab Now
+- name: Kolab Now
+  link: ABC
+  jurisdiction:
+    text: Switzerland
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Starts at CHF 5.00 / mo, basic
+      features only. Groupware account is CHF 9.90
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Group Plan, CHF 9.90/m)
+    level: 2
+  aliases:
+    text: Yes (Group Plan Only (CHF 9.90/ m)
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, POP, SMTP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: No (Card, PayPal, Bank Transfer)
+    level: 3
+  personalInfoRequired:
+    text: Full name, recovery email
+    level: 2
+
+# CounterMail
+- name: CounterMail
+  link: ABC
+  jurisdiction:
+    text: Sweden (14 Eyes)
+    level: 1
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Pricing is $4.83 / month
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Paid Plan + $15 setup fee)
+    level: 2
+  aliases:
+    text: Yes, max 10 text aliases. No catch-all
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: Yes (BTC only)
+    level: 1
+  personalInfoRequired:
+    text: None
+    level: 1
+
+# StartMail
+- name: StartMail
+  link: ABC
+  jurisdiction:
+    text: Netherlands (9 Eyes)
+    level: 2
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 1
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Starts at $5 / month,
+      but without custom domain support
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Domain Plan, $5.85)
+    level: 2
+  aliases:
+    text: Unlimited aliases. No catch-all
+    level: 2
+  webClientAccess:
+    text: Yes (IMAP, SMTP)
+    level: 1
+  securityAudit:
+    text: Apparently, but not published
+    level: 2
+  acceptsCrypto:
+    text: Yes (BTC only, but only personal accounts)
+    level: 2
+  personalInfoRequired:
+    text: Full name, recovery email
+    level: 2
+
+# Disroot
+- name: Disroot
+  link: ABC
+  jurisdiction:
+    text: Netherlands (9 Eyes)
+    level: 2
+  encryption:
+    text: |
+      PGP
+      (Off-by-default)
+    level: 2
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: Free, payment set for each additional feature
+    level: 1
+  domainSupport:
+    text: |
+      Yes
+      (Donation required)
+    level: 2
+  aliases:
+    text: 'No'
+    level: 3
+  webClientAccess:
+    text: Yes (IMAP, POP, SMTP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: Yes (BTC only)
+    level: 1
+  personalInfoRequired:
+    text: None
+    level: 1
+
+# Hushmail
+- name: Hushmail
+  link: ABC
+  jurisdiction:
+    text: Canada (5 Eyes)
+    level: 3
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      No free plan. Starts at $5.99 / month,
+      rising to $7.99 for email archiving support
+    level: 2
+  domainSupport:
+    text: |
+      Yes
+      (Business Plan, $5.99/m)
+    level: 2
+  aliases:
+    text: Yes (Small Business Plan, $5.99/m)
+    level: 2
+  webClientAccess:
+    text: Yes (POP, SMTP)
+    level: 1
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: Full name, recovery email
+    level: 2
+
+# LavaBit
+- name: LavaBit
+  link: ABC
+  jurisdiction:
+    text: United States (5 Eyes)
+    level: 3
+  encryption:
+    text: DIME
+    level: 2
+  openSource:
+    text: 'No'
+    level: 3
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      Free plan, but invite only.
+      Pricing ranges from $30 - $60 / year,
+      depending on storage requirements
+    level: 2
+  domainSupport:
+    text: 'No'
+    level: 3
+  aliases:
+    text: 'No'
+    level: 3
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: Full name, recovery email
+    level: 2
