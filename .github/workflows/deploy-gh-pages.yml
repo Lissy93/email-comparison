@@ -1,5 +1,7 @@
 name: 🚀 Build and Deploy to GH Pages
-on: [push]
+on: 
+  push:
+  workflow_dispatch:
 permissions: 
   contents: write
 jobs:
@@ -12,7 +14,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn
-          yarn build
+          yarn build --public-url ./email-comparison
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
