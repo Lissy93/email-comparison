@@ -14,7 +14,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn
-          yarn build --public-url ./email-comparison
+          yarn build --public-url https://lissy93.github.io/email-comparison/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
