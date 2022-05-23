@@ -193,7 +193,7 @@ mailProviders:
       (Standard Plan, €3.00/m)
     level: 2
   aliases:
-    text: 25 aliases (Standard Plan). No catch-all
+    text: 25 aliases (Standard Plan).
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP3)
