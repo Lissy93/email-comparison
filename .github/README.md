@@ -26,8 +26,8 @@ Once merged, the app is re-built and deployed to GH pages automatically (using [
 
 Prerequisites: [Git](https://git-scm.com/), [Node.js](https://nodejs.org/) and either [NPM](https://npmjs.org/) or [Yarn](https://yarnpkg.com/)
 
-1. Get the code: `https://github.com/Lissy93/email-comparison.git`
-2. Install dependencies: `yarn`
+1. Get the code: `git clone https://github.com/Lissy93/email-comparison.git`
+2. Install dependencies: `yarn install`
 3. Start the development server: `yarn dev`
 4. Build for production: `yarn build`
 5. Serve up build app: `yarn start`
