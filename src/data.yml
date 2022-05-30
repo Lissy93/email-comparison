@@ -161,8 +161,8 @@ mailProviders:
     text: 'No'
     level: 3
   acceptsCrypto:
-    text: No (Card, PayPal)
-    level: 3
+    text: Yes (BTC and LTC)
+    level: 1
   personalInfoRequired:
     text: Recovery Email Only
     level: 1
