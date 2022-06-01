@@ -41,7 +41,7 @@ mailProviders:
     text: Yes (BTC only)
     level: 1
   personalInfoRequired:
-    text: Recovery Email Only
+    text: Email for One-time Verification
     level: 1
 
 # Tutanota
@@ -142,7 +142,7 @@ mailProviders:
   pricing:
     text: |
       Free Plan - 500MB, 1 address, no custom domain.
-      Paid plans start from €2.50 and allow for custom
+      Paid plans start from €2.50/m and allow for custom
       domain, 10 aliases, mail client access and
       increased message volume
     level: 1
@@ -152,11 +152,11 @@ mailProviders:
       (Entry Plan, €2.50/m)
     level: 2
   aliases:
-    text: Yes (Entry Plan, €2.50)
+    text: Yes (Entry Plan, €2.50/m)
     level: 2
   webClientAccess:
-    text: Yes (IMAP, POP3, SMTP)
-    level: 1
+    text: Yes (Entry Plan, €2.50/m)
+    level: 2
   securityAudit:
     text: 'No'
     level: 3
@@ -486,10 +486,10 @@ mailProviders:
     text: 'No'
     level: 3
   acceptsCrypto:
-    text: Yes (BTC only)
+    text: Yes (BTC, XMR and FAIR)
     level: 1
   personalInfoRequired:
-    text: None
+    text: Email for One-time Verification
     level: 1
 
 # Hushmail
