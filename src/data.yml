@@ -155,7 +155,7 @@ mailProviders:
     text: Yes (Entry Plan, €2.50/m)
     level: 2
   webClientAccess:
-    text: Yes (Entry Plan, €2.50/m)
+    text: Entry Plan (IMAP, POP3, SMTP)
     level: 2
   securityAudit:
     text: 'No'
