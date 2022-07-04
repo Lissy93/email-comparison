@@ -102,10 +102,19 @@ body {
   );
 }
 
-td[data-column-id="name"] a {
+td[data-column-id="name"] {
+  border-bottom: 1px solid #d0cecebf;
+}
+td[data-column-id="name"] span {
+  display: flex;
+  align-items: center;
+}
+td[data-column-id="name"] span a {
   font-weight: bold;
   color: var(--primary);
 }
-td[data-column-id="name"] {
-  border-bottom: 1px solid #d0cecebf;
+td[data-column-id="name"] span img {
+  width: 2rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
 }
