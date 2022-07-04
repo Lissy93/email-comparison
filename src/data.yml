@@ -4,7 +4,7 @@
 mailProviders:
 # ProtonMail
 - name: ProtonMail
-  link: ABC
+  link: https://proton.me/
   jurisdiction:
     text: Switzerland
     level: 1
@@ -49,7 +49,7 @@ mailProviders:
 
 # Tutanota
 - name: Tutanota
-  link: ABC
+  link: https://tutanota.com/
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -93,9 +93,9 @@ mailProviders:
     text: Yes (Android and iOS)
     level: 1
 
-# CriptText
-- name: CriptText
-  link: ABC
+# Criptext
+- name: Criptext
+  link: https://criptext.com/
   jurisdiction:
     text: Decentralized
     level: 0
@@ -135,7 +135,7 @@ mailProviders:
 
 # Mailfence
 - name: Mailfence
-  link: ABC
+  link: https://mailfence.com/
   jurisdiction:
     text: Belgium (14 Eyes)
     level: 1
@@ -181,7 +181,7 @@ mailProviders:
 
 # Mailbox.org
 - name: Mailbox.org
-  link: ABC
+  link: https://mailbox.org/
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -227,7 +227,7 @@ mailProviders:
 
 # Soverin
 - name: Soverin
-  link: ABC
+  link: https://soverin.net/
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -270,7 +270,7 @@ mailProviders:
 
 # Posteo
 - name: Posteo
-  link: ABC
+  link: https://posteo.de/en
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -310,7 +310,7 @@ mailProviders:
 
 # Runbox
 - name: Runbox
-  link: ABC
+  link: https://runbox.com/
   jurisdiction:
     text: Norway (14 Eyes)
     level: 1
@@ -355,7 +355,7 @@ mailProviders:
 
 # Kolab Now
 - name: Kolab Now
-  link: ABC
+  link: https://kolabnow.com/
   jurisdiction:
     text: Switzerland
     level: 1
@@ -399,7 +399,7 @@ mailProviders:
 
 # CounterMail
 - name: CounterMail
-  link: ABC
+  link: https://countermail.com/
   jurisdiction:
     text: Sweden (14 Eyes)
     level: 1
@@ -442,7 +442,7 @@ mailProviders:
 
 # StartMail
 - name: StartMail
-  link: ABC
+  link: https://www.startmail.com/
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -486,7 +486,7 @@ mailProviders:
 
 # Disroot
 - name: Disroot
-  link: ABC
+  link: https://disroot.org/
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -530,7 +530,7 @@ mailProviders:
 
 # Hushmail
 - name: Hushmail
-  link: ABC
+  link: https://hushmail.com/
   jurisdiction:
     text: Canada (5 Eyes)
     level: 3
@@ -574,7 +574,7 @@ mailProviders:
 
 # LavaBit
 - name: LavaBit
-  link: ABC
+  link: https://lavabit.com/
   jurisdiction:
     text: United States (5 Eyes)
     level: 3

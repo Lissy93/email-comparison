@@ -1,11 +1,15 @@
 
 /**
- * Main app entry point for handling logic
- * Imports and formats data from YAML file
- * and renders the data table with Grid.js
+ * Main app entry point app, and handler for all logic
+ * Imports and formats data then renders Grid.js table
+ * 
+ * GitHub: https://github.com/Lissy93/email-comparison
+ * Live App: https://lissy93.github.io/email-comparison
+ * 
+ * Licensed MIT, © Alicia Sykes <aliciasykes.com> 2022
  */
 
-import { Grid } from 'gridjs';
+import { Grid, html } from 'gridjs';
 import 'gridjs/dist/theme/mermaid.css';
 import { mailProviders } from './data.yml';
 
@@ -35,9 +39,6 @@ const getKey = (searchValue) => {
     .map(([k]) => k);
 }
 
-// Make flat array of column names
-// const columnsNames = [ 'Name', ...columnMap.values()];
-
 // Add custom data attribute to given cell, indicating it's score
 const customDataAttributes = (cell, row, column) => {
   if (!cell || !row || !column) return null;
@@ -49,9 +50,21 @@ const customDataAttributes = (cell, row, column) => {
   return { 'data-score': level, title: notes };
 }
 
+// Format the first cell (provider name) with HTML, so it can be a hyperlink
+const makeTitleCell = (cell) => {
+  const link = mailProviders.find((provider) => provider.name === cell )?.link || '#';
+  return html(
+    `<a title="${cell} (${link})" href="${link}" target="_blank">${cell}</a>`
+  );
+}
+
 // Make list of column names
 const columnsNames = [
-  'Name', ...dataKeys.map(
+  { // First cell
+    name: 'Name',
+    formatter: makeTitleCell,
+  },
+  ...dataKeys.map( // All other cells
     (key) => ({
       name: columnMap.get(key),
       attributes: customDataAttributes,
@@ -92,6 +105,3 @@ const tableElement = document.getElementById('email-comparison-table');
 
 // Render table!
 emailTable.render(tableElement);
-
-/* Comparison of Secure Email Services
-(C) Alicia Sykes <alicia@omg.lol> 2022 */
