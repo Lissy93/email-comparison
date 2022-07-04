@@ -21,6 +21,7 @@ const columnMap = new Map([
   ['webClientAccess', 'External Access'],
   ['securityAudit', 'Security Audited'],
   ['acceptsCrypto', 'Accepts Crypto'],
+  ['mobileApp', 'Mobile App'],
   ['personalInfoRequired', 'Required Info'],
 ]);
 

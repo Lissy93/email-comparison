@@ -43,6 +43,9 @@ mailProviders:
   personalInfoRequired:
     text: Email for One-time Verification
     level: 1
+  mobileApp:
+    text: Yes (Android and iOS)
+    level: 1
 
 # Tutanota
 - name: Tutanota
@@ -86,6 +89,9 @@ mailProviders:
   personalInfoRequired:
     text: None
     level: 1
+  mobileApp:
+    text: Yes (Android and iOS)
+    level: 1
 
 # CriptText
 - name: CriptText
@@ -122,6 +128,9 @@ mailProviders:
     level: 0
   personalInfoRequired:
     text: None
+    level: 1
+  mobileApp:
+    text: Yes (Android, iOS and desktop)
     level: 1
 
 # Mailfence
@@ -166,6 +175,9 @@ mailProviders:
   personalInfoRequired:
     text: Recovery Email Only
     level: 1
+  mobileApp:
+    text: No (PWA Only)
+    level: 3
 
 # Mailbox.org
 - name: Mailbox.org
@@ -209,6 +221,9 @@ mailProviders:
       Requires full name, location,
       mobile number and recovery email
     level: 3
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # Soverin
 - name: Soverin
@@ -249,6 +264,9 @@ mailProviders:
   personalInfoRequired:
     text: Requires phone number
     level: 3
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # Posteo
 - name: Posteo
@@ -286,6 +304,9 @@ mailProviders:
   personalInfoRequired:
     text: Payment Info Only
     level: 1
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # Runbox
 - name: Runbox
@@ -328,6 +349,9 @@ mailProviders:
   personalInfoRequired:
     text: Full name, recovery email
     level: 2
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # Kolab Now
 - name: Kolab Now
@@ -369,6 +393,9 @@ mailProviders:
   personalInfoRequired:
     text: Full name, recovery email
     level: 2
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # CounterMail
 - name: CounterMail
@@ -409,6 +436,9 @@ mailProviders:
   personalInfoRequired:
     text: None
     level: 1
+  mobileApp:
+    text: 'No'
+    level: 3
 
 # StartMail
 - name: StartMail
@@ -450,6 +480,9 @@ mailProviders:
   personalInfoRequired:
     text: Full name, recovery email
     level: 2
+  mobileApp:
+    text: No (PWA Only)
+    level: 3
 
 # Disroot
 - name: Disroot
@@ -491,6 +524,9 @@ mailProviders:
   personalInfoRequired:
     text: Email for One-time Verification
     level: 1
+  mobileApp:
+    text: No (Mobile app, but no mail)
+    level: 3
 
 # Hushmail
 - name: Hushmail
@@ -532,6 +568,9 @@ mailProviders:
   personalInfoRequired:
     text: Full name, recovery email
     level: 2
+  mobileApp:
+    text: No, but planned
+    level: 3
 
 # LavaBit
 - name: LavaBit
@@ -572,3 +611,6 @@ mailProviders:
   personalInfoRequired:
     text: Full name, recovery email
     level: 2
+  mobileApp:
+    text: 'No'
+    level: 3
