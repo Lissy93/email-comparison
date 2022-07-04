@@ -12,10 +12,6 @@
 import { Grid, html } from 'gridjs';
 import 'gridjs/dist/theme/mermaid.css';
 import { mailProviders } from './data.yml';
-// import  from './assets/provider-icons/protonmail.png'
-// import _ from './assets/provider-icons/tutanota.png'
-// import icons from './assets/provider-icons/*.png'
-// const icons = require('./assets/provider-icons/*.png');
 
 // Map data identifiers to textual column names
 const columnMap = new Map([
@@ -56,11 +52,10 @@ const customDataAttributes = (cell, row, column) => {
 
 // Format the first cell (provider name) with HTML, so it can be a hyperlink
 const makeTitleCell = (cell) => {
-  const link = mailProviders.find((provider) => provider.name === cell )?.link || '#';
-  const icon = mailProviders.find((provider) => provider.name === cell )?.icon || '#';
+  const row = mailProviders.find((provider) => provider.name === cell );
   return html(`
-    <img width="16" src="${icon}" />
-    <a title="${cell} (${link})" href="${link}" target="_blank">${cell}</a>
+    <img width="16" src="${row.icon}" />
+    <a title="${cell} (${row.link})" href="${row.link}" target="_blank">${cell}</a>
   `);
 }
 
