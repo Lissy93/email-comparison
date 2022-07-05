@@ -106,20 +106,25 @@ mailProviders:
     text: Signal Protocol
     level: 2
   openSource:
-    text: 'Yes'
-    level: 1
+    text: 'Only frontend'
+    level: 2
   onionSite:
     text: N/A (No webmail)
     level: 0
   pricing:
-    text: Free
+    text: |
+      Free Plan - ∞ emails, 25 MB per email
+      (∞ attachments per account), no custom domain.
+      Buisness plan ($15/month) allows for a custom domain,
+      50 MB attachments, email analytics, read receipts, aliases,
+      and a catch-all email.
     level: 1
   domainSupport:
-    text: 'Yes'
-    level: 1
+    text: 'Yes, with buisness plan ($15/m)'
+    level: 2
   aliases:
-    text: 'No'
-    level: 3
+    text: 'Yes, with buisness plan ($15/m)'
+    level: 2
   webClientAccess:
     text: 'No'
     level: 3
@@ -127,10 +132,10 @@ mailProviders:
     text: 'No'
     level: 3
   acceptsCrypto:
-    text: 'N/A (No payment)'
-    level: 0
+    text: 'No'
+    level: 3
   personalInfoRequired:
-    text: None
+    text: 'None'
     level: 1
   mobileApp:
     text: Yes (Android, iOS and desktop)
