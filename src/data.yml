@@ -112,7 +112,11 @@ mailProviders:
     text: N/A (No webmail)
     level: 0
   pricing:
-    text: Free Plan - ∞ emails, 25 MB per email (∞ attachments per account), no custom domain. Buisness plan ($15/month) allows for a custom domain, 50 MB attachments, email analytics, read receipts, aliases, and a catch-all email.
+    text: Free Plan - ∞ emails, 25 MB per email
+    (∞ attachments per account), no custom domain.
+    Buisness plan ($15/month) allows for a custom domain,
+    50 MB attachments, email analytics, read receipts, aliases,
+    and a catch-all email.
     level: 1
   domainSupport:
     text: 'Yes, with buisness plan ($15/m)'
