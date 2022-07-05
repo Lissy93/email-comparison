@@ -30,7 +30,9 @@ mailProviders:
       (Plus Plan, €5.00/m)
     level: 2
   aliases:
-    text: Yes (Professional Plan, €8.00)
+    text: |
+      Yes
+      (Professional Plan, €8.00)
     level: 2
   webClientAccess:
     text: Yes, but through Bridge
@@ -46,6 +48,9 @@ mailProviders:
     level: 1
   mobileApp:
     text: Yes (Android and iOS)
+    level: 1
+  activeDevelopment:
+    text: 'Yes'
     level: 1
 
 # Tutanota
@@ -77,7 +82,10 @@ mailProviders:
       (Premium Plan, €1.00/m)
     level: 2
   aliases:
-    text: €1 / month per 20 aliases. No catch-all
+    text: |
+      Yes
+      (€1 / month per 20 aliases)
+      No catch-all
     level: 2
   webClientAccess:
     text: 'No'
@@ -93,6 +101,9 @@ mailProviders:
     level: 1
   mobileApp:
     text: Yes (Android and iOS)
+    level: 1
+  activeDevelopment:
+    text: 'Yes'
     level: 1
 
 # Criptext
@@ -120,10 +131,14 @@ mailProviders:
       and a catch-all email.
     level: 1
   domainSupport:
-    text: 'Yes, with buisness plan ($15/m)'
+    text: |- 
+      Yes
+      (Business plan, $15/m)
     level: 2
   aliases:
-    text: 'Yes, with buisness plan ($15/m)'
+    text: |-
+      Yes
+      (Business plan, $15/m)
     level: 2
   webClientAccess:
     text: 'No'
@@ -140,6 +155,9 @@ mailProviders:
   mobileApp:
     text: Yes (Android, iOS and desktop)
     level: 1
+  activeDevelopment:
+    text: 'No'
+    level: 3
 
 # Mailfence
 - name: Mailfence
@@ -170,7 +188,9 @@ mailProviders:
       (Entry Plan, €2.50/m)
     level: 2
   aliases:
-    text: Yes (Entry Plan, €2.50/m)
+    text: |
+      Yes
+      (Entry Plan, €2.50/m)
     level: 2
   webClientAccess:
     text: Entry Plan (IMAP, POP3, SMTP)
@@ -187,6 +207,9 @@ mailProviders:
   mobileApp:
     text: No (PWA Only)
     level: 3
+  activeDevelopment:
+    text: 'Unknown'
+    level: 0
 
 # Mailbox.org
 - name: Mailbox.org
@@ -215,7 +238,9 @@ mailProviders:
       (Standard Plan, €3.00/m)
     level: 2
   aliases:
-    text: 25 aliases (Standard Plan).
+    text: |
+      Yes
+      25 aliases (Standard Plan).
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP3)
@@ -234,6 +259,9 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Unknown'
+    level: 0
 
 # Soverin
 - name: Soverin
@@ -261,7 +289,9 @@ mailProviders:
       (Paid Plan, €3.25)
     level: 2
   aliases:
-    text: Yes (Paid Plan, €3.25)
+    text: |
+      Yes
+      (Paid Plan, €3.25)
     level: 2
   webClientAccess:
     text: Yes (IMAP)
@@ -278,6 +308,9 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Unknown'
+    level: 0
 
 # Posteo
 - name: Posteo
@@ -302,7 +335,10 @@ mailProviders:
     text: 'No'
     level: 3
   aliases:
-    text: Yes (€0.10/m per alias). No catch-all
+    text: |
+      Yes
+      (€0.10/m per alias)
+      No catch-all
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP3)
@@ -319,6 +355,9 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Partial'
+    level: 2
 
 # Runbox
 - name: Runbox
@@ -348,7 +387,10 @@ mailProviders:
       (Micro Plan, €1.25/m)
     level: 2
   aliases:
-    text: €3.95 / year per 5 aliases. No catch-all
+    text: |
+      Yes
+      €3.95 / year per 5 aliases
+      No catch-all
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP, SMTP)
@@ -365,6 +407,9 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
 
 # Kolab Now
 - name: Kolab Now
@@ -393,7 +438,9 @@ mailProviders:
       (Group Plan, CHF 9.90/m)
     level: 2
   aliases:
-    text: Yes (Group Plan Only (CHF 9.90/ m)
+    text: |
+      Yes
+      (Group Plan Only, CHF 9.90/ m)
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP, SMTP)
@@ -408,6 +455,9 @@ mailProviders:
     text: Full name, recovery email
     level: 2
   mobileApp:
+    text: 'No'
+    level: 3
+  activeDevelopment:
     text: 'No'
     level: 3
 
@@ -437,7 +487,10 @@ mailProviders:
       (Paid Plan + $15 setup fee)
     level: 2
   aliases:
-    text: Yes, max 10 text aliases. No catch-all
+    text: |
+      Yes
+      Max 10 text aliases
+      No catch-all
     level: 2
   webClientAccess:
     text: Yes (IMAP)
@@ -454,6 +507,9 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
 
 # StartMail
 - name: StartMail
@@ -482,7 +538,10 @@ mailProviders:
       (Domain Plan, $5.85)
     level: 2
   aliases:
-    text: Unlimited aliases. No catch-all
+    text: |
+      Yes
+      Unlimited aliases
+      No catch-all
     level: 2
   webClientAccess:
     text: Yes (IMAP, SMTP)
@@ -499,6 +558,9 @@ mailProviders:
   mobileApp:
     text: No (PWA Only)
     level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
 
 # Disroot
 - name: Disroot
@@ -544,6 +606,9 @@ mailProviders:
   mobileApp:
     text: No (Mobile app, but no mail)
     level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
 
 # Hushmail
 - name: Hushmail
@@ -572,7 +637,9 @@ mailProviders:
       (Business Plan, $5.99/m)
     level: 2
   aliases:
-    text: Yes (Small Business Plan, $5.99/m)
+    text: |
+      Yes
+      (Small Business Plan, $5.99/m)
     level: 2
   webClientAccess:
     text: Yes (POP, SMTP)
@@ -589,6 +656,9 @@ mailProviders:
   mobileApp:
     text: No, but planned
     level: 3
+  activeDevelopment:
+    text: 'Unknown'
+    level: 0
 
 # LavaBit
 - name: LavaBit
@@ -633,3 +703,6 @@ mailProviders:
   mobileApp:
     text: 'No'
     level: 3
+  activeDevelopment:
+    text: 'Unknown'
+    level: 0

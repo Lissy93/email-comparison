@@ -27,6 +27,7 @@ const columnMap = new Map([
   ['acceptsCrypto', 'Accepts Crypto'],
   ['mobileApp', 'Mobile App'],
   ['personalInfoRequired', 'Required Info'],
+  ['activeDevelopment', 'Active Development'],
 ]);
 
 // Get list of column IDs from above map
