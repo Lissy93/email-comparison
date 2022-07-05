@@ -135,8 +135,8 @@ mailProviders:
     text: 'No'
     level: 3
   personalInfoRequired:
-    text: 'Not sure, sign ups for buisness plan are currently not possible.'
-    level: 0
+    text: 'None'
+    level: 1
   mobileApp:
     text: Yes (Android, iOS and desktop)
     level: 1
