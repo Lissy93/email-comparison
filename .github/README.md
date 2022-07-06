@@ -10,7 +10,7 @@ The app can be accessed at: **[lissy93.github.io/email-comparison](https://lissy
 
 <p align="center">
   <a href="https://lissy93.github.io/email-comparison/">
-    <img src="https://i.ibb.co/FsX2TWR/email-comparison-screenshot-2.png" />
+    <img src="https://i.ibb.co/f8ZfxmW/email-comparison-screenshot.png" />
   </a>
 </p>
 
