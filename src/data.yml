@@ -541,7 +541,7 @@ mailProviders:
     text: |
       Yes
       Unlimited aliases
-      No catch-all
+      Catch-all (only for custom domains)
     level: 2
   webClientAccess:
     text: Yes (IMAP, SMTP)
