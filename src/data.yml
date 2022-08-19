@@ -553,8 +553,8 @@ mailProviders:
     text: Yes (BTC only, but only personal accounts)
     level: 2
   personalInfoRequired:
-    text: Full name, recovery email
-    level: 2
+    text: None
+    level: 1
   mobileApp:
     text: No (PWA Only)
     level: 2
