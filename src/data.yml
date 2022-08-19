@@ -206,7 +206,7 @@ mailProviders:
     level: 1
   mobileApp:
     text: No (PWA Only)
-    level: 3
+    level: 2
   activeDevelopment:
     text: 'Unknown'
     level: 0
@@ -557,7 +557,7 @@ mailProviders:
     level: 2
   mobileApp:
     text: No (PWA Only)
-    level: 3
+    level: 2
   activeDevelopment:
     text: 'Yes'
     level: 1
