@@ -24,7 +24,7 @@ mailProviders:
       Paid plans start from €5 and allow for additional
       features, custom domain, and increased message volume
     level: 1
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Plus Plan, €5.00/m)
@@ -76,7 +76,7 @@ mailProviders:
       for a custom domain, 5 alias addresses and
       improved search and filters
     level: 1
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Premium Plan, €1.00/m)
@@ -130,7 +130,7 @@ mailProviders:
       50 MB attachments, email analytics, read receipts, aliases,
       and a catch-all email.
     level: 1
-  domainSupport:
+  customDomain:
     text: |- 
       Yes
       (Business plan, $15/m)
@@ -182,7 +182,7 @@ mailProviders:
       domain, 10 aliases, mail client access and
       increased message volume
     level: 1
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Entry Plan, €2.50/m)
@@ -206,7 +206,7 @@ mailProviders:
     level: 1
   mobileApp:
     text: No (PWA Only)
-    level: 3
+    level: 2
   activeDevelopment:
     text: 'Unknown'
     level: 0
@@ -232,7 +232,7 @@ mailProviders:
       No free plan. Starts at €1 / month.
       Increases to €9 for all features and storage
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Standard Plan, €3.00/m)
@@ -283,7 +283,7 @@ mailProviders:
     text: |
       No free plan, flat fee of €3.25 / month for everything
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Paid Plan, €3.25)
@@ -331,7 +331,7 @@ mailProviders:
   pricing:
     text: No free plan. Pricing is €1 / month
     level: 2
-  domainSupport:
+  customDomain:
     text: 'No'
     level: 3
   aliases:
@@ -381,7 +381,7 @@ mailProviders:
       single domain, going up to €69.95 / year for
       more storage and domains
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Micro Plan, €1.25/m)
@@ -432,7 +432,7 @@ mailProviders:
       No free plan. Starts at CHF 5.00 / mo, basic
       features only. Groupware account is CHF 9.90
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Group Plan, CHF 9.90/m)
@@ -481,7 +481,7 @@ mailProviders:
     text: |
       No free plan. Pricing is $4.83 / month
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Paid Plan + $15 setup fee)
@@ -523,16 +523,16 @@ mailProviders:
     level: 1
   openSource:
     text: 'No'
-    level: 1
+    level: 3
   onionSite:
     text: 'No'
     level: 3
   pricing:
     text: |
       No free plan. Starts at $5 / month,
-      but without custom domain support
+      but without custom domain feature
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Domain Plan, $5.85)
@@ -541,7 +541,7 @@ mailProviders:
     text: |
       Yes
       Unlimited aliases
-      No catch-all
+      Catch-all (only for custom domains)
     level: 2
   webClientAccess:
     text: Yes (IMAP, SMTP)
@@ -553,11 +553,11 @@ mailProviders:
     text: Yes (BTC only, but only personal accounts)
     level: 2
   personalInfoRequired:
-    text: Full name, recovery email
-    level: 2
+    text: None
+    level: 1
   mobileApp:
     text: No (PWA Only)
-    level: 3
+    level: 2
   activeDevelopment:
     text: 'Yes'
     level: 1
@@ -583,7 +583,7 @@ mailProviders:
   pricing:
     text: Free, payment set for each additional feature
     level: 1
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Donation required)
@@ -629,9 +629,9 @@ mailProviders:
   pricing:
     text: |
       No free plan. Starts at $5.99 / month,
-      rising to $7.99 for email archiving support
+      rising to $7.99 for email archiving feature
     level: 2
-  domainSupport:
+  customDomain:
     text: |
       Yes
       (Business Plan, $5.99/m)
@@ -682,7 +682,7 @@ mailProviders:
       Pricing ranges from $30 - $60 / year,
       depending on storage requirements
     level: 2
-  domainSupport:
+  customDomain:
     text: 'No'
     level: 3
   aliases:

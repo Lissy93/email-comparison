@@ -20,7 +20,7 @@ const columnMap = new Map([
   ['openSource', 'Open Source'],
   ['onionSite', 'Onion Site'],
   ['pricing', 'Pricing'],
-  ['domainSupport', 'Custom Domain'],
+  ['customDomain', 'Custom Domain'],
   ['aliases', 'Aliases'],
   ['webClientAccess', 'External Access'],
   ['securityAudit', 'Security Audited'],
