@@ -716,13 +716,13 @@ mailProviders:
     level: 2
   encryption:
     text: Elliptic curve crypto
-    level: 2
+    level: 1
   openSource:
     text: Client Apps and all Cryptography
     level: 2
   onionSite:
-    text: 'No'
-    level: 3
+    text: 'Yes'
+    level: 1
   pricing:
     text: |
       Free Plan - 10 GB, 4 address, no custom domain.
