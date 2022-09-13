@@ -736,9 +736,7 @@ mailProviders:
     level: 2
   aliases:
     text: |
-      Yes
-      (€1 / month per 20 aliases)
-      No catch-all
+      Yes, 4 for free and any crypto wallets
     level: 2
   webClientAccess:
     text: 'No'
