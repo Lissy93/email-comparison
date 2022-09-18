@@ -756,3 +756,50 @@ mailProviders:
   activeDevelopment:
     text: 'Yes'
     level: 1
+
+# Moonfish
+- name: Moonfish
+  link: https://moonfish.app/
+  icon: https://avatars.githubusercontent.com/u/43076724
+  jurisdiction:
+    text: United States (5 Eyes)
+    level: 2
+  encryption:
+    text: Elliptic curve crypto
+    level: 1
+  openSource:
+    text: Core and Cryptography
+    level: 2
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      Free 
+    level: 1
+  customDomain:
+    text: |
+      Yes (free)
+    level: 1
+  aliases:
+    text: |
+      Yes (free)
+    level: 1
+  webClientAccess:
+    text: 'Yes'
+    level: 1
+  securityAudit:
+    text: No
+    level: 3
+  acceptsCrypto:
+    text: No
+    level: 3
+  personalInfoRequired:
+    text: None
+    level: 1
+  mobileApp:
+    text: No
+    level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
