@@ -94,7 +94,7 @@ const emailTable = new Grid({
   sort: true,
   resizable: true,
   fixedHeader: true,
-  pagination: { limit: 15 },
+  pagination: { limit: 20 },
   style: { 
     table: { 
       'white-space': 'pre'
