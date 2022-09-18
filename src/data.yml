@@ -706,3 +706,53 @@ mailProviders:
   activeDevelopment:
     text: 'Unknown'
     level: 0
+
+# Skiff
+- name: Skiff
+  link: https://skiff.com/
+  icon: https://raw.githubusercontent.com/skiff-org/skiff-org.github.io/a0393e722d96ec7e7b7836487cc1f76a54f5dc36/assets/logo/skiff-logo-circle.svg
+  jurisdiction:
+    text: United States (5 Eyes) with decentralized storage
+    level: 2
+  encryption:
+    text: Elliptic curve crypto
+    level: 1
+  openSource:
+    text: Client Apps and all Cryptography
+    level: 2
+  onionSite:
+    text: 'Yes'
+    level: 1
+  pricing:
+    text: |
+      Free Plan - 10 GB, 4 address, no custom domain.
+      Paid plans start from $8 / month, and allow
+      for custom domains, extra storage, more aliases, and more.
+    level: 1
+  customDomain:
+    text: |
+      Yes
+      (Pro or Business Plans)
+    level: 2
+  aliases:
+    text: |
+      Yes, 4 for free and any crypto wallets
+    level: 2
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: Yes (2022, Trail of Bits)
+    level: 1
+  acceptsCrypto:
+    text: Yes
+    level: 1
+  personalInfoRequired:
+    text: None
+    level: 1
+  mobileApp:
+    text: Yes (Android, iOS, iPad, macOS)
+    level: 1
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
