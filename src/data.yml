@@ -111,8 +111,8 @@ mailProviders:
   link: https://criptext.com/
   icon: https://i.ibb.co/tKhzqJR/criptext.png
   jurisdiction:
-    text: Decentralized
-    level: 0
+    text: United States (5 Eyes)
+    level: 3
   encryption:
     text: Signal Protocol
     level: 2
