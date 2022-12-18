@@ -36,3 +36,27 @@ Prerequisites: [Git](https://git-scm.com/), [Node.js](https://nodejs.org/) and e
 
 Licensed under [MIT](https://github.com/Lissy93/email-comparison/blob/master/LICENSE),
 © [Alicia Sykes](https://aliciasykes.com) 2022
+
+---
+
+<!-- License + Copyright -->
+<p  align="center">
+  <i>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2022</i><br>
+  <i>Licensed under <a href="https://github.com/Lissy93/email-comparison/blob/master/LICENSE">MIT</a></i><br>
+  <a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <sup>Thanks for visiting :)</sup>
+</p>
+
+<!-- Dinosaur -->
+<!-- 
+                        . - ~ ~ ~ - .
+      ..     _      .-~               ~-.
+     //|     \ `..~                      `.
+    || |      }  }              /       \  \
+(\   \\ \~^..'                 |         }  \
+ \`.-~  o      /       }       |        /    \
+ (__          |       /        |       /      `.
+  `- - ~ ~ -._|      /_ - ~ ~ ^|      /- _      `.
+              |     /          |     /     ~-.     ~- _
+              |_____|          |_____|         ~ - . _ _~_-_
+-->
