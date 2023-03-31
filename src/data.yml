@@ -225,8 +225,8 @@ mailProviders:
     text: 'No'
     level: 3
   onionSite:
-    text: 'No'
-    level: 3
+    text: 'Yes'
+    level: 1
   pricing:
     text: |
       No free plan. Starts at €1 / month.
