@@ -97,7 +97,7 @@ mailProviders:
     text: No (But ProxyStore gift cards accepted
     level: 2
   personalInfoRequired:
-    text: None
+    text: IP address (public proxies are blocked from signing up)
     level: 1
   mobileApp:
     text: Yes (Android and iOS)
