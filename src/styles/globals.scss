@@ -1,0 +1,15 @@
+::selection {
+  background: var(--primary);
+  color: var(--background);
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 80vw;
+  padding: 1.8rem 1rem;
+}

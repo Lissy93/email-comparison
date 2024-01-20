@@ -1,0 +1,39 @@
+---
+import { transformMailProviders } from '../utils/transform-data';
+import  './Icon.ts'
+
+
+const { provider } = Astro.props;
+
+const metrics = transformMailProviders([provider])[0];
+
+---
+
+<section>
+  <h2>Key Info: {provider.name}</h2>
+  {metrics.attributes.map((attribute) => (
+    <div>
+      <h3>{attribute.title}</h3>
+      <span>
+        {attribute.level === 1
+          ? <icon-component iconName="hundred" iconColor="var(--green-light)" />
+          : attribute.level === 2
+          ? <icon-component iconName="thumb" iconColor="var(--amber-light)" />
+          : attribute.level === 3
+          ? <icon-component iconName="skull" iconColor="var(--red-light)" />
+          : <icon-component iconName="question" iconColor="var(--grey-light)" />
+        }
+      </span>
+      <p>{attribute.value}</p>
+    </div>
+  ))}
+</section>
+
+
+<style lang="scss">
+  section {
+    p {
+      display: inline;
+    }
+  }
+</style>

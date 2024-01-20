@@ -1,0 +1,94 @@
+
+---
+import type { MailProvider, TransformedMailProvider } from '../types/MailServices';
+import { transformMailProviders } from '../utils/transform-data';
+const { mailProviders, title } = Astro.props;
+
+const getPositives = (service: TransformedMailProvider) => {
+  return service.attributes.filter((attribute) => attribute.level === 1).map((attribute) => attribute.title);
+}
+
+const sortServicesByPositives = (services: TransformedMailProvider[]) => {
+  return services.sort((a, b) => {
+    const aPositives = getPositives(a);
+    const bPositives = getPositives(b);
+    return bPositives.length - aPositives.length;
+  });
+}
+
+const makeSellingPointsString = (service: TransformedMailProvider) => {
+  const positives = getPositives(service);
+  const ifNone = 'No known positives (yet)';
+  return positives.length > 1 ? `Positives: ${positives.join(' • ')}` : ifNone;
+}
+
+const services = sortServicesByPositives(transformMailProviders(mailProviders));
+
+---
+
+<section>
+  <h2>{title || 'Reports'}</h2>
+  <div class="links">
+    {services.map((service: TransformedMailProvider) => (
+      <a href={`/email/${service.key}`}>
+        <article title={makeSellingPointsString(service)}>
+          <div class="top">
+            <img width="64" src={service.icon} alt={service.name} />
+            <h3>{service.name}</h3>
+          </div>      
+        </article>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80vw;
+    padding: 1.8rem 1rem;
+    .links {
+      display: grid;
+      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--foreground-lighter);
+      padding: 1rem;
+      align-items: center;
+      cursor: pointer;
+      .top {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+      }
+      h3 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+      img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 4px;
+        filter: grayscale(0.2);
+      }
+      overflow: hidden;
+      transition: all 0.25s ease-in-out;
+      h3, img {
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        border-color: var(--foreground-light);
+        background: #ffffff03;
+        img {
+          transform: scale(1.05);
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+</style>

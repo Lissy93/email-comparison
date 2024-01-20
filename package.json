@@ -1,0 +1,26 @@
+{
+  "name": "email-comparison",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/lit": "^4.0.1",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^4.2.1",
+    "js-yaml": "^4.1.0",
+    "lit": "^3.1.1",
+    "marked": "^11.1.1",
+    "sass": "^1.70.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9"
+  }
+}

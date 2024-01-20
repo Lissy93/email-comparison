@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Ubuntu:wght@300;700&display=swap');
+
+body {
+  // font-family: 'Ubuntu', sans-serif;
+  font-family: "Roboto Mono", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--foreground-body);
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: "Roboto Mono", serif;
+  font-weight: 700;
+  color: var(--foreground-head);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}

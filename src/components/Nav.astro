@@ -1,0 +1,47 @@
+---
+import './Icon';
+---
+
+<nav>
+  <a class="site-name" href="/">
+    <icon-component iconName="email" iconWidth="2rem" iconHeight="1.8rem" />
+    <span class="site-name">Email Comparison</span>
+  </a>
+  <div class="links">
+    <a href="https://github.com/lissy93/email-comparison">
+      <icon-component iconName="github" />
+      GitHub
+    </a>
+  </div>
+</nav>
+
+<style lang="scss">
+  nav {
+    background: var(--primary);
+    color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem;
+    a {
+      color: var(--background);
+    }
+    display: flex;
+    .site-name {
+      font-size: 2rem;
+      font-weight: bold;
+      
+    }
+    .links {
+      a {
+        padding: 0.5rem;
+        border-radius: 2rem;
+        transition: all 0.2s ease;
+        &:hover {
+          background: var(--primary-darker);
+        }
+      }
+    }
+  }
+</style>

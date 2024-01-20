@@ -1,0 +1,36 @@
+---
+import yaml from 'js-yaml';
+
+import type { MailProvider } from '../types/MailServices';
+
+import Layout from '../layouts/Layout.astro';
+
+import Hero from '../components/Hero.astro';
+import ProviderLinks from '../components/ProviderLinks.astro';
+import Intro from '../components/Intro.astro';
+import { EmailComparisonTable } from '../components/EmailComparisonTable.ts';
+import config from '../utils/config.ts';
+
+// Fetch and parse the data
+let mailProvidersData: MailProvider[] = [];
+try {
+  const response = await fetch(config.yamlUrl);
+  const text = await response.text();
+  const data = yaml.load(text);
+  mailProvidersData = data.mailProviders;
+} catch (error) {
+  console.error('Error fetching data:', error);
+}
+
+---
+
+<Layout title="Email Comparison">
+	<main>
+		<Hero />
+		<ProviderLinks mailProviders={mailProvidersData} />
+		<!-- <email-comparison-table mailProviders={mailProvidersData}  /> -->
+		<EmailComparisonTable mailProviders={mailProvidersData} client:idle />
+		<Intro />
+	</main>
+</Layout>
+
