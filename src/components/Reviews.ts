@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import { marked } from 'marked';
 import { customElement, property, state } from 'lit/decorators.js';
 
 
@@ -194,6 +195,11 @@ export class Reviews extends LitElement {
     }
   };
 
+  sanitizeHtml(html: string): string {
+    return html.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '')
+               .replace(/<style[^>]*>([\S\s]*?)<\/style>/gmi, '');
+  }
+
   makeAuthorInfo(author: GhCommentAuthor) {
     const authorLink = html`<a class="author-info" href="https://github.com/${author.login}" target="_blank" rel="nofollow">@${author.login}</a>`;
     // const authorWebsite = author.websiteUrl ? html`<a class="website" href="${author.websiteUrl}" target="_blank" rel="nofollow">${author.websiteUrl}</a>` : null;
@@ -234,15 +240,26 @@ export class Reviews extends LitElement {
   }
 
   renderComment(comment: GhComment) {
+    const sanitizedHtml = this.sanitizeHtml(marked(comment.body));
     return html`
       <div class="comment">
-
         ${this.makeAuthorInfo(comment.author)}
-        <p>${comment.body}</p>
+        <p .innerHTML=${sanitizedHtml}></p>
         ${this.makeCommentInfo(comment)}
       </div>
     `;
   }
+
+  // renderComment(comment: GhComment) {
+  //   return html`
+  //     <div class="comment">
+
+  //       ${this.makeAuthorInfo(comment.author)}
+  //       <p>${comment.body}</p>
+  //       ${this.makeCommentInfo(comment)}
+  //     </div>
+  //   `;
+  // }
 
   render() {
     console.log(this.comments);
