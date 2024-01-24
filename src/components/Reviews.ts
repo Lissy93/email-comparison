@@ -119,7 +119,6 @@ export class Reviews extends LitElement {
 
   connectedCallback(): void {
     super.connectedCallback();
-    console.log('Discussion ID:', this.discussionId);
     if (this.discussionId) {
       this.fetchComments();
     }
@@ -132,13 +131,11 @@ export class Reviews extends LitElement {
   }
 
   async fetchComments(): Promise<void> {
-    console.log('fetching comments');
     this.isLoading = true;
     const apiUrl = `https://github-discussion-comments.as93.workers.dev/?username=lissy93&repo=email-comparison&discussionId=${this.discussionId}`;
     
     try {
       const response = await fetch(apiUrl);
-      console.log(response);
       if (!response.ok) {
         throw new Error('Failed to fetch comments');
       }
@@ -262,7 +259,6 @@ export class Reviews extends LitElement {
   // }
 
   render() {
-    console.log(this.comments);
     return html`
       <div class="comment-wrapper">
         <p class="view-all-link">

@@ -39,8 +39,6 @@ const formatLink = (link: string) => {
   return link.replace(/^(https?:\/\/)?(www\.)?|\/$/g, '');
 };
 
-const discussionNumber = 15;
-
 ---
 
 { provider && (
@@ -51,9 +49,7 @@ const discussionNumber = 15;
     <h1>{provider.name}</h1>
     <section class="service-head">
       <div class="summary">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
-        </p>
+        <p>{provider.description}</p>
         <a class="link-button" href={provider.link}>
           <icon-component iconName="website" iconHeight="1rem" iconWidth="1.2rem" />
           {formatLink(provider.link)}
@@ -68,9 +64,9 @@ const discussionNumber = 15;
     <ServiceInfo provider={provider} />
     <section>
       <h2>Reviews</h2>
-      <Reviews discussionId={discussionNumber} client:visible />
+      <Reviews discussionId={provider.discussionId || 15} client:visible />
       <a class="link-button" target="_blank" rel="nofollow"
-        href={`https://github.com/lissy93/email-comparison/discussions/${discussionNumber}`}>Leave a Review</a>
+        href={`https://github.com/lissy93/email-comparison/discussions/${provider.discussionId}`}>Leave a Review</a>
       <p>
         Have you used {provider.name}?
         Help other users make an informed decission, by leaving your feedback!

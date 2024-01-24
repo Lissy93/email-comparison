@@ -6,6 +6,8 @@ export interface MailProvider {
   name: string;
   link: string;
   icon: string;
+  description: string;
+  discussionId: number;
   jurisdiction: TextAndLevel;
   encryption: TextAndLevel;
   openSource: TextAndLevel;
