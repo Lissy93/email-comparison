@@ -2,51 +2,6 @@
 # List of mail providers (in no order)
 # Level indicates color (0 = N/A, 1 = Great, 2 = Okay, 3 = Bad)
 mailProviders:
-# Forward Email
-- name: Forward Email
-  link: https://forwardemail.net
-  icon: https://github.com/forwardemail/forwardemail.net/raw/master/assets/img/logo-square-30-30.svg
-  jurisdiction:
-    text: United States (5 Eyes)
-    level: 3
-  encryption:
-    text: PGP
-    level: 1
-  openSource:
-    text: 'Yes'
-    level: 1
-  onionSite:
-    text: N/A (No webmail)
-    level: 0
-  pricing:
-    text: |
-      Free Plan - unlimited domains, aliases, and custom domains.
-      Paid plans start from $3/mo and allow SMTP, IMAP, POP3, and API access
-    level: 1
-  customDomain:
-    text: 'Yes (Unlimited)'
-    level: 1
-  aliases:
-    text: 'Yes (Unlimited)'
-    level: 1
-  webClientAccess:
-    text: N/A (No webmail yet, but you can use an [open source webmail client](https://forwardemail.net/blog/open-source/web-email-clients) or Gmail, Apple Mail, Thunderbird, etc)
-    level: 0
-  securityAudit:
-    text: 'N/A (100% open-source on GitHub)'
-    level: 1
-  acceptsCrypto:
-    text: 'No'
-    level: 2
-  personalInfoRequired:
-    text: 'No'
-    level: 1
-  mobileApp:
-    text: N/A (Supports [Apple Mail on iOS](https://forwardemail.net/blog/open-source/apple-i-os-email-clients) or [Android open source email clients](https://forwardemail.net/blog/open-source/android-email-clients))
-    level: 0
-  activeDevelopment:
-    text: 'Yes'
-    level: 1
   
 # ProtonMail
 - name: ProtonMail
@@ -799,6 +754,54 @@ mailProviders:
   mobileApp:
     text: Yes (Android, iOS, iPad, macOS)
     level: 1
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
+    
+# Forward Email
+- name: Forward Email
+  link: https://forwardemail.net
+  icon: https://github.com/forwardemail/forwardemail.net/raw/master/assets/img/logo-square-30-30.svg
+  jurisdiction:
+    text: United States (5 Eyes)
+    level: 3
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: N/A (No webmail)
+    level: 0
+  pricing:
+    text: |
+      Free Plan - unlimited domains, aliases, and custom domains.
+      Paid plans start from $3/mo and allow SMTP, IMAP, POP3, and API access
+    level: 1
+  customDomain:
+    text: 'Yes'
+    level: 1
+  aliases:
+    text: |
+      Yes
+      (Unlimited)
+    level: 1
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: None
+    level: 1
+  mobileApp:
+    text: 'No'
+    level: 3
   activeDevelopment:
     text: 'Yes'
     level: 1
