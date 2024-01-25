@@ -41,7 +41,6 @@ const formatLink = (link: string) => {
 
 ---
 
-{ provider && (
 <Layout title={`${provider.name} | Email Comparison`}>
   <Nav />
 	<main>
@@ -81,7 +80,6 @@ const formatLink = (link: string) => {
 		<ProviderLinks mailProviders={allProviders} title="Other Mail Services to Consider" />
 	</main>
 </Layout>
-)}
 
 <style lang="scss">
   header {
@@ -102,6 +100,7 @@ const formatLink = (link: string) => {
       justify-content: center;
       align-items: center;
       gap: 1rem;
+      flex-wrap: wrap;
       .summary {
         text-align: justify;
         flex: 1;

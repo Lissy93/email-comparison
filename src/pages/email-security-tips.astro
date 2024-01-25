@@ -1,0 +1,40 @@
+---
+import config from '../utils/config';
+import { bestPracticesData } from '../utils/best-practices-data';
+
+import Layout from '../layouts/Layout.astro';
+
+import Nav from '../components/Nav.astro';
+import  '../components/Icon'
+
+
+---
+
+
+<Layout title="About | Email Comparison">
+  <Nav />
+	<section>
+    <h1>Email Privacy & Security: Best Practices</h1>
+    <article>
+      {bestPracticesData.map((practice) => (
+        <div class="best-practice">
+          <h2>{practice.title}</h2>
+          <p>{practice.description}</p>
+          
+        </div>
+      ))}
+    </article>
+  </section>
+</Layout>
+
+
+<style lang="scss">
+  section {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+
+

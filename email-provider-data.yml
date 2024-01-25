@@ -2,10 +2,15 @@
 # List of mail providers (in no order)
 # Level indicates color (0 = N/A, 1 = Great, 2 = Okay, 3 = Bad)
 mailProviders:
+  
 # ProtonMail
 - name: ProtonMail
   link: https://proton.me/
   icon: https://i.ibb.co/J3jvgkR/protonmail.png
+  description: >
+    Founded in 2013 in Switzerland by Andy Yen. It offers end-to-end encryption
+    and is under Switzerland's privacy laws. Proton AG also provides VPN, calendar,
+    file storage, and password manager services.
   jurisdiction:
     text: Switzerland
     level: 1
@@ -13,8 +18,8 @@ mailProviders:
     text: PGP
     level: 1
   openSource:
-    text: 'Yes'
-    level: 1
+    text: 'Only frontend'
+    level: 2
   onionSite:
     text: 'Yes'
     level: 1
@@ -57,6 +62,11 @@ mailProviders:
 - name: Tutanota
   link: https://tutanota.com/
   icon: https://i.ibb.co/HhHL1S4/tutanota.png
+  description: >
+    A German-based service launched in 2011, Tutanota is open-source and offers a
+    fully encrypted mailbox, calendar, and address book. Tutanota uses their own
+    (RSA + AES based) encryption method, to protect more than just the email body
+    (including subject, attachments, calendar, contacts, notifications).
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -110,6 +120,10 @@ mailProviders:
 - name: Criptext
   link: https://criptext.com/
   icon: https://i.ibb.co/tKhzqJR/criptext.png
+  description: >
+    A decentralized mail provider that doesn't require the use of any cloud storage
+    to store or sync messages. Instead emails are received using the client apps
+    directly, where they're encrypted using the Signal protocol.
   jurisdiction:
     text: United States (5 Eyes)
     level: 3
@@ -163,6 +177,10 @@ mailProviders:
 - name: Mailfence
   link: https://mailfence.com/
   icon: https://i.ibb.co/CPjDhfY/mailfence.png
+  description: >
+    An OpenPGP-based mail provider, published by ContactOffice Group in 2013.
+    Mailfence focuses on offering support for standard protocols, making it
+    compatible with any PGP-enabled mail client.
   jurisdiction:
     text: Belgium (14 Eyes)
     level: 1
@@ -215,6 +233,9 @@ mailProviders:
 - name: Mailbox.org
   link: https://mailbox.org/
   icon: https://i.ibb.co/jy6wQ4r/mailbox-org.png
+  description: >
+    German-based PGP-encrypted mail service, operating since 2014. Mailbox.org is
+    powered by green energy, and also comes bundled with OpenTalk for secure video calls.
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -267,6 +288,10 @@ mailProviders:
 - name: Soverin
   link: https://soverin.net/
   icon: https://i.ibb.co/HF10yMr/soverin.png
+  description: >
+    European no-thrills mail hosting for your custom domain, with a Roundcube
+    based web client. Founded in 2014 in the Netherlands, their encryption
+    options are limited
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -316,6 +341,9 @@ mailProviders:
 - name: Posteo
   link: https://posteo.de/en
   icon: https://i.ibb.co/mBCHSx3/posteo.png
+  description: >
+    Founded in 2009 by 	Patrik & Sabrina Löhr, the Berlin-based mail provider
+    offers a simple and affordable mail service using only green energy.
   jurisdiction:
     text: Germany (14 Eyes)
     level: 1
@@ -363,6 +391,9 @@ mailProviders:
 - name: Runbox
   link: https://runbox.com/
   icon: https://i.ibb.co/68dSFpz/runbox.png
+  description: >
+    Operating since 2000 in Olso, Runbox emphasizes minimal data retention and
+    leverages Norway's privacy laws.
   jurisdiction:
     text: Norway (14 Eyes)
     level: 1
@@ -415,6 +446,9 @@ mailProviders:
 - name: Kolab Now
   link: https://kolabnow.com/
   icon: https://i.ibb.co/nL7Hyr1/kolab-now.png
+  description: >
+    A Swiss-based service offering a suite of online collaboration tools,
+    including email. It operates under Swiss data protection laws.
   jurisdiction:
     text: Switzerland
     level: 1
@@ -465,6 +499,10 @@ mailProviders:
 - name: CounterMail
   link: https://countermail.com/
   icon: https://i.ibb.co/4TGTqZX/countermail.png
+  description: >
+    Operating from Sweden since 2008, CounterMail uses diskless web servers to
+    prevent data retention. The service supports end-to-end encryption and is
+    unique for its USB key option, which adds an additional layer of security
   jurisdiction:
     text: Sweden (14 Eyes)
     level: 1
@@ -515,6 +553,9 @@ mailProviders:
 - name: StartMail
   link: https://www.startmail.com/
   icon: https://i.ibb.co/s6D3jKr/startmail.png
+  description: >
+    From the creators of StartPage, StartMail was launched in 2014 in the
+    Netherlands, offering PGP encrypted email and aliases.
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -566,6 +607,10 @@ mailProviders:
 - name: Disroot
   link: https://disroot.org/
   icon: https://i.ibb.co/7NqHScM/disroot.png
+  description: >
+    A Netherlands-based platform providing decentralized services, Disroot is
+    community-driven and focuses on hosting open-source applications,
+    funded by donations.
   jurisdiction:
     text: Netherlands (9 Eyes)
     level: 2
@@ -614,6 +659,12 @@ mailProviders:
 - name: Hushmail
   link: https://hushmail.com/
   icon: https://i.ibb.co/HVhZVxT/hushmail.png
+  description: >
+    A Canadian-based service founded in 1999, Hushmail was one of the early providers
+    of encrypted email. While aimed more at small businesses needing complacence,
+    healthcare and law companies, they also offer a personal plan.
+    Hushmail also offer a secure web forms feature, ESIGN/UETA-compliant electronic
+    signatures and a private messenger.
   jurisdiction:
     text: Canada (5 Eyes)
     level: 3
@@ -664,6 +715,10 @@ mailProviders:
 - name: LavaBit
   link: https://lavabit.com/
   icon: https://i.ibb.co/ww9xcWz/lavabit.png
+  description: >
+    Relaunched in 2017, known for its involvement in the Snowden revelations,
+    LavaBit offers the Dark Mail encryption model. LavaBit's founder also worked
+    on developing the DIME (Dark Internet Mail Environment) protocol
   jurisdiction:
     text: United States (5 Eyes)
     level: 3
@@ -711,6 +766,11 @@ mailProviders:
 - name: Skiff
   link: https://skiff.com/
   icon: https://raw.githubusercontent.com/skiff-org/skiff-org.github.io/a0393e722d96ec7e7b7836487cc1f76a54f5dc36/assets/logo/skiff-logo-circle.svg
+  description: >
+    Founded by Andrew Milich and Jason Ginsberg in 2020, Skiff makes use of
+    blockchain technology to aid in decentralization. They have also developed
+    an open-source TypeScript cryptography library for symmetric encryption,
+    public-key encryption, key generation, object versioning and hashing
   jurisdiction:
     text: United States (5 Eyes) with decentralized storage
     level: 2
@@ -753,6 +813,58 @@ mailProviders:
   mobileApp:
     text: Yes (Android, iOS, iPad, macOS)
     level: 1
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
+    
+# Forward Email
+- name: Forward Email
+  link: https://forwardemail.net
+  icon: https://github.com/forwardemail/forwardemail.net/raw/master/assets/img/logo-square-30-30.svg
+  description: >
+    An email forwarding service that allows users to create custom email addresses
+    using their own domain. It operates without storing emails on its servers and
+    adheres to open standards for email forwarding.
+  jurisdiction:
+    text: United States (5 Eyes)
+    level: 3
+  encryption:
+    text: PGP
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: N/A (No webmail)
+    level: 0
+  pricing:
+    text: |
+      Free Plan - unlimited domains, aliases, and custom domains.
+      Paid plans start from $3/mo and allow SMTP, IMAP, POP3, and API access
+    level: 1
+  customDomain:
+    text: 'Yes'
+    level: 1
+  aliases:
+    text: |
+      Yes
+      (Unlimited)
+    level: 1
+  webClientAccess:
+    text: 'No'
+    level: 3
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: 'No'
+    level: 3
+  personalInfoRequired:
+    text: None
+    level: 1
+  mobileApp:
+    text: 'No'
+    level: 3
   activeDevelopment:
     text: 'Yes'
     level: 1

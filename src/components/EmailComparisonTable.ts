@@ -56,6 +56,12 @@ export class EmailComparisonTable extends LitElement {
     padding: 1.8rem;
   }
 
+  h2 {
+    color: var(--foreground-head);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
   .intro {
     margin: 0 0 0.5rem 0;
     font-size: 0.8rem;

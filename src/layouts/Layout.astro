@@ -9,15 +9,17 @@ import MetaTags from '../components/MetaTags.astro';
 
 interface Props {
 	title: string;
+	dontIndex: boolean | undefined;
 }
 
-const { title } = Astro.props;
+const { title, dontIndex } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<MetaTags />
+		{dontIndex && <meta name="robots" content="noindex" />}
 		{ title && <title>{title}</title>}
 	</head>
 	<body>
