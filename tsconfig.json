@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es2020", "dom"],
+    "experimentalDecorators": true, // Enable experimental support for decorators (needed for Lit)
+    "strict": false,
+    "esModuleInterop": true
+  },
+}

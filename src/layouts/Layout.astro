@@ -1,0 +1,29 @@
+---
+
+import '../styles/colors.scss';
+import '../styles/typography.scss';
+import '../styles/globals.scss';
+
+import Footer from '../components/Footer.astro';
+import MetaTags from '../components/MetaTags.astro';
+
+interface Props {
+	title: string;
+	dontIndex: boolean | undefined;
+}
+
+const { title, dontIndex } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<MetaTags />
+		{dontIndex && <meta name="robots" content="noindex" />}
+		{ title && <title>{title}</title>}
+	</head>
+	<body>
+		<slot />
+		<Footer />
+	</body>
+</html>

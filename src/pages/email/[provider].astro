@@ -1,0 +1,135 @@
+---
+import yaml from 'js-yaml';
+
+import type { MailProvider } from '../../types/MailServices';
+import { makeKey } from '../../utils/transform-data';
+import config from '../../utils/config';
+
+import Layout from '../../layouts/Layout.astro';
+
+import Nav from '../../components/Nav.astro';
+import ProviderLinks from '../../components/ProviderLinks.astro';
+import ServiceInfo from '../../components/ServiceInfo.astro';
+import  '../../components/Icon'
+
+import { Reviews } from '../../components/Reviews';
+
+const allProviders = await fetch(config.yamlUrl)
+  .then(res => res.text())
+  .then(yaml.load)
+  .then(data => data.mailProviders )
+  .catch(
+    error => {
+      console.error('Error fetching data:', error);
+    }
+  );
+
+const provider = allProviders.find(provider => makeKey(provider.name) === Astro.params.provider || '');
+
+export async function getStaticPaths() {
+  const allProvidersData = await fetch(config.yamlUrl).then(res => res.text()).then(yaml.load);
+  return allProvidersData.mailProviders.map((provider) => ({
+    params: {
+      provider: makeKey(provider.name),
+    },
+  }));
+}
+
+const formatLink = (link: string) => {
+  return link.replace(/^(https?:\/\/)?(www\.)?|\/$/g, '');
+};
+
+---
+
+<Layout title={`${provider.name} | Email Comparison`}>
+  <Nav />
+	<main>
+    <header>
+    <h1>{provider.name}</h1>
+    <section class="service-head">
+      <div class="summary">
+        <p>{provider.description}</p>
+        <a class="link-button" href={provider.link}>
+          <icon-component iconName="website" iconHeight="1rem" iconWidth="1.2rem" />
+          {formatLink(provider.link)}
+        </a>
+        {provider.source && (
+          <a class="link-button" href={provider.source}><icon-component iconName="git" iconWidth="1.2rem" /> Source</a>
+        )}
+      </div>
+      <img width="128" src={provider.icon} alt={`Icon for ${provider.name}`} />
+    </section>
+    </header>
+    <ServiceInfo provider={provider} />
+    <section>
+      <h2>Reviews</h2>
+      <Reviews discussionId={provider.discussionId || 15} client:visible />
+      <a class="link-button" target="_blank" rel="nofollow"
+        href={`https://github.com/lissy93/email-comparison/discussions/${provider.discussionId}`}>Leave a Review</a>
+      <p>
+        Have you used {provider.name}?
+        Help other users make an informed decission, by leaving your feedback!
+      </p>
+      <p class="smaller">
+        Reviews are posted on GitHub (using Discussions). The aim of which is to be as transparent as possible.<br>
+        No user review will be deleted unless obviously spam or offensive.
+        Note that we will display your GitHub name and picture (as well as profile age + follower account, to give creadibility to the review).
+        You may still leave a review, even if you you're associated with the service, but you <b>MUST</b> disclouse your affiliation.
+      </p>
+    </section>
+		<ProviderLinks mailProviders={allProviders} title="Other Mail Services to Consider" />
+	</main>
+</Layout>
+
+<style lang="scss">
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    background: var(--foreground-lighter);
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    .service-head {
+      display: flex;
+      flex-direction: row-reverse;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      .summary {
+        text-align: justify;
+        flex: 1;
+      }
+      img {
+        width: 8rem;
+        border-radius: 4px;
+      }
+    }
+  }
+  section {
+    .link-button {
+      background: var(--primary);
+      color: var(--background);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      margin: 0 1rem 0 0;
+      :global(icon-component) {
+        margin-right: 0.25rem;
+      }
+    }
+    .smaller {
+      font-size: 0.8rem;
+      margin-top: 1.5rem;
+      opacity: 0.75;
+    }
+  }
+</style>
+
+
+

@@ -1,0 +1,60 @@
+---
+import  './Icon.ts'
+---
+
+<header>
+  <h1>
+    <icon-component iconName="email" iconSize="5rem"  />
+    Email Comparison
+  </h1>
+  <p class="subtitle">
+    An objective comparison of <i>private</i> <br>and/or <i>secure</i> email services
+  </p>
+  <a class="github-link" href="https://github.com/lissy93/email-comparison" target="_blank" rel="nofollow">
+    <icon-component iconName="github" iconWidth="2rem" iconHeight="1.8rem" />
+    View on GitHub
+  </a>
+</header>
+
+<style lang="scss">
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background: var(--foreground-lighter);
+  }
+  h1 {
+    color: var(--foreground-head);
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    :global(icon-component) { margin: 0.5rem 1rem 0 0; }
+  }
+  .subtitle {
+    color: var(--foreground-body);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: -1rem 0 0 0;
+  }
+  .github-link {
+    font-size: 1.2rem;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1rem 0.25rem 1rem;
+    margin: 0 auto;
+    border-radius: 1.8rem;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    gap: 0.5rem;
+    &:hover {
+      background-color: var(--primary);
+      color: var(--background);
+    }
+  }
+</style>

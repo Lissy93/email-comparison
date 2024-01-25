@@ -1,27 +1,27 @@
 {
-  "name": "private-email-comparison",
-  "source": "src/index.html",
-  "version": "1.0.0",
-  "license": "MIT",
-  "description": "A tool for comparing private and secure mail providers",
-  "author": "Alicia Sykes <alicia@omg.lol> (https://aliciasykes.com)",
+  "name": "email-comparison",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "parcel",
-    "dev": "parcel serve",
-    "build": "parcel build"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "gridjs": "^5.0.2"
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/lit": "^4.0.1",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^4.2.1",
+    "js-yaml": "^4.1.0",
+    "lit": "^3.1.1",
+    "marked": "^11.1.1",
+    "sass": "^1.70.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.5.0",
-    "@parcel/transformer-webmanifest": "2.5.0",
-    "@parcel/transformer-yaml": "2.5.0",
-    "parcel": "^2.5.0",
-    "typescript": "4.4.4"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
-  },
-  "keywords": [ "email", "security", "parcel" ]
+    "@types/js-yaml": "^4.0.9"
+  }
 }

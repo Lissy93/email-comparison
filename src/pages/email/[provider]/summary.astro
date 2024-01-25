@@ -1,0 +1,125 @@
+---
+import yaml from 'js-yaml';
+
+import { makeKey } from '../../../utils/transform-data';
+import config from '../../../utils/config';
+import Layout from '../../../layouts/Layout.astro';
+import { transformMailProviders } from '../../../utils/transform-data';
+import  '../../../components/Icon'
+
+
+const allProviders = await fetch(config.yamlUrl)
+  .then(res => res.text())
+  .then(yaml.load)
+  .then(data => data.mailProviders )
+  .catch(
+    error => {
+      console.error('Error fetching data:', error);
+    }
+  );
+
+const provider = allProviders.find(provider => makeKey(provider.name) === Astro.params.provider || '');
+
+const metrics = transformMailProviders([provider])[0];
+metrics.attributes = metrics.attributes.filter((attribute) => attribute.title !== 'Pricing')
+
+
+export async function getStaticPaths() {
+  return (await fetch(config.yamlUrl).then(res => res.text()).then(yaml.load)).mailProviders
+  .map((provider) => ({
+    params: { provider: makeKey(provider.name) },
+  }));
+}
+
+---
+
+<Layout title={`${provider.name} | Email Comparison`} dontIndex={true}>
+<div class="outer">
+	<main>
+    <div class="topper-top">
+      <a href={`https://email-comparison.as93.net/${makeKey(provider.name)}`}>email-comparison.as93.net/{makeKey(provider.name)}</a>
+      <a href={`https://github.com/lissy93/email-comparison/`}>github.com/lissy93/email-comparison</a>
+    </div>
+    <div class="top">
+      <img width="128" src={provider.icon} alt={`Icon for ${provider.name}`} />  
+      <h1>{provider.name}</h1>
+    </div>
+    <div class="metrics">
+      {metrics.attributes.map((attribute) => (
+        <div class="metric">
+          <h3>{attribute.title}</h3>
+          <p>
+            <span>
+              {attribute.level === 1
+                ? <icon-component iconName="hundred" iconColor="var(--green-light)" />
+                : attribute.level === 2
+                ? <icon-component iconName="thumb" iconColor="var(--amber-light)" />
+                : attribute.level === 3
+                ? <icon-component iconName="skull" iconColor="var(--red-light)" />
+                : <icon-component iconName="question" iconColor="var(--grey-light)" />
+              }
+            </span>
+            {attribute.value}
+          </p>
+        </div>
+      ))}
+    </div>
+	</main>
+</div>
+</Layout>
+
+<style lang="scss">
+  .outer {
+    padding: 4rem 6rem;
+    background: var(--primary);
+    background: rgb(255,243,79);
+    background: linear-gradient(164deg, rgba(255,243,79,1) 0%, rgba(255,234,48,1) 64%, rgba(223,204,34,1) 90%);
+  }
+  main {
+    background: var(--background);
+    box-shadow: 8px 9px 7px #00000052, -4px -4px 12px #00000052;
+    border-radius: 24px;
+    padding: 1rem 2rem 2rem 2rem;
+    .topper-top {
+      display: flex;
+      justify-content: space-between;
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 2rem;
+      img { width: 3rem; }
+      h1 { margin: 0; }
+    }
+    a {
+      opacity: 0.7;
+    }
+    .metrics {
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 1rem;
+      .metric {
+        border: 1px solid var(--foreground-lighter);
+        padding: 1rem;
+        h3 {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+        p {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  :global(footer) { display: none; }
+</style>
+
+
+
