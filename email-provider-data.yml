@@ -7,6 +7,7 @@ mailProviders:
 - name: ProtonMail
   link: https://proton.me/
   icon: https://i.ibb.co/J3jvgkR/protonmail.png
+  discussionId: 17
   description: >
     Founded in 2013 in Switzerland by Andy Yen. It offers end-to-end encryption
     and is under Switzerland's privacy laws. Proton AG also provides VPN, calendar,
@@ -62,6 +63,7 @@ mailProviders:
 - name: Tutanota
   link: https://tutanota.com/
   icon: https://i.ibb.co/HhHL1S4/tutanota.png
+  discussionId: 21
   description: >
     A German-based service launched in 2011, Tutanota is open-source and offers a
     fully encrypted mailbox, calendar, and address book. Tutanota uses their own
@@ -120,6 +122,7 @@ mailProviders:
 - name: Criptext
   link: https://criptext.com/
   icon: https://i.ibb.co/tKhzqJR/criptext.png
+  discussionId: 28
   description: >
     A decentralized mail provider that doesn't require the use of any cloud storage
     to store or sync messages. Instead emails are received using the client apps
@@ -177,6 +180,7 @@ mailProviders:
 - name: Mailfence
   link: https://mailfence.com/
   icon: https://i.ibb.co/CPjDhfY/mailfence.png
+  discussionId: 22
   description: >
     An OpenPGP-based mail provider, published by ContactOffice Group in 2013.
     Mailfence focuses on offering support for standard protocols, making it
@@ -233,6 +237,7 @@ mailProviders:
 - name: Mailbox.org
   link: https://mailbox.org/
   icon: https://i.ibb.co/jy6wQ4r/mailbox-org.png
+  discussionId: 29
   description: >
     German-based PGP-encrypted mail service, operating since 2014. Mailbox.org is
     powered by green energy, and also comes bundled with OpenTalk for secure video calls.
@@ -288,6 +293,7 @@ mailProviders:
 - name: Soverin
   link: https://soverin.net/
   icon: https://i.ibb.co/HF10yMr/soverin.png
+  discussionId: 30
   description: >
     European no-thrills mail hosting for your custom domain, with a Roundcube
     based web client. Founded in 2014 in the Netherlands, their encryption
@@ -341,6 +347,7 @@ mailProviders:
 - name: Posteo
   link: https://posteo.de/en
   icon: https://i.ibb.co/mBCHSx3/posteo.png
+  discussionId: 23
   description: >
     Founded in 2009 by 	Patrik & Sabrina Löhr, the Berlin-based mail provider
     offers a simple and affordable mail service using only green energy.
@@ -446,6 +453,7 @@ mailProviders:
 - name: Kolab Now
   link: https://kolabnow.com/
   icon: https://i.ibb.co/nL7Hyr1/kolab-now.png
+  discussionId: 26
   description: >
     A Swiss-based service offering a suite of online collaboration tools,
     including email. It operates under Swiss data protection laws.
@@ -499,6 +507,7 @@ mailProviders:
 - name: CounterMail
   link: https://countermail.com/
   icon: https://i.ibb.co/4TGTqZX/countermail.png
+  discussionId: 20
   description: >
     Operating from Sweden since 2008, CounterMail uses diskless web servers to
     prevent data retention. The service supports end-to-end encryption and is
@@ -553,6 +562,7 @@ mailProviders:
 - name: StartMail
   link: https://www.startmail.com/
   icon: https://i.ibb.co/s6D3jKr/startmail.png
+  discussionId: 27
   description: >
     From the creators of StartPage, StartMail was launched in 2014 in the
     Netherlands, offering PGP encrypted email and aliases.
@@ -607,6 +617,7 @@ mailProviders:
 - name: Disroot
   link: https://disroot.org/
   icon: https://i.ibb.co/7NqHScM/disroot.png
+  discussionId: 25
   description: >
     A Netherlands-based platform providing decentralized services, Disroot is
     community-driven and focuses on hosting open-source applications,
@@ -659,6 +670,7 @@ mailProviders:
 - name: Hushmail
   link: https://hushmail.com/
   icon: https://i.ibb.co/HVhZVxT/hushmail.png
+  discussionId: 31
   description: >
     A Canadian-based service founded in 1999, Hushmail was one of the early providers
     of encrypted email. While aimed more at small businesses needing complacence,
@@ -715,6 +727,7 @@ mailProviders:
 - name: LavaBit
   link: https://lavabit.com/
   icon: https://i.ibb.co/ww9xcWz/lavabit.png
+  discussionId: 32
   description: >
     Relaunched in 2017, known for its involvement in the Snowden revelations,
     LavaBit offers the Dark Mail encryption model. LavaBit's founder also worked
@@ -766,6 +779,7 @@ mailProviders:
 - name: Skiff
   link: https://skiff.com/
   icon: https://raw.githubusercontent.com/skiff-org/skiff-org.github.io/a0393e722d96ec7e7b7836487cc1f76a54f5dc36/assets/logo/skiff-logo-circle.svg
+  discussionId: 18
   description: >
     Founded by Andrew Milich and Jason Ginsberg in 2020, Skiff makes use of
     blockchain technology to aid in decentralization. They have also developed
@@ -821,6 +835,7 @@ mailProviders:
 - name: Forward Email
   link: https://forwardemail.net
   icon: https://github.com/forwardemail/forwardemail.net/raw/master/assets/img/logo-square-30-30.svg
+  discussionId: 19
   description: >
     An email forwarding service that allows users to create custom email addresses
     using their own domain. It operates without storing emails on its servers and
