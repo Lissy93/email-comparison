@@ -159,6 +159,7 @@ Please report this to https://github.com/markedjs/marked.`,e){const i="<p>An err
           </a>
         </p>
         ${this.isLoading?x`<p>Loading user reviews from GitHub...</p>`:null}
+        ${this.comments.length==0&&!this.isLoading?x`<p>Nothing yet. Why don't you be the first to leave a comment?</p>`:null}
         ${this.comments.map(e=>this.renderComment(e))}
       
       </div>
