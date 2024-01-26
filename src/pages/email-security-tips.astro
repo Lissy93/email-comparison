@@ -1,6 +1,8 @@
 ---
+import { marked } from 'marked';
+
 import config from '../utils/config';
-import { bestPracticesData } from '../utils/best-practices-data';
+import { bestPracticesData, introduction } from '../utils/best-practices-data';
 
 import Layout from '../layouts/Layout.astro';
 
@@ -13,14 +15,19 @@ import  '../components/Icon'
 
 <Layout title="About | Email Comparison">
   <Nav />
-	<section>
+  <header>
     <h1>Email Privacy & Security: Best Practices</h1>
+    { introduction.map((paragraph) => (
+      <Fragment set:html={marked(paragraph)} />
+    ))}
+  </header>
+	<section>
+    
     <article>
       {bestPracticesData.map((practice) => (
         <div class="best-practice">
-          <h2>{practice.title}</h2>
-          <p>{practice.description}</p>
-          
+          <h3>{practice.title}</h3>
+          <Fragment set:html={marked(practice.description)} />          
         </div>
       ))}
     </article>
@@ -29,6 +36,13 @@ import  '../components/Icon'
 
 
 <style lang="scss">
+  header {
+    background: var(--foreground-lighter);
+    padding: 4rem;
+    h1 {
+      margin: 0;
+    }
+  }
   section {
     h1 {
       font-size: 2rem;

@@ -63,7 +63,7 @@ const formatLink = (link: string) => {
     <ServiceInfo provider={provider} />
     <section>
       <h2>Reviews</h2>
-      <Reviews discussionId={provider.discussionId || 15} client:visible />
+      <Reviews discussionId={provider.discussionId} client:visible />
       <a class="link-button" target="_blank" rel="nofollow"
         href={`https://github.com/lissy93/email-comparison/discussions/${provider.discussionId}`}>Leave a Review</a>
       <p>

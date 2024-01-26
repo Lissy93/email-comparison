@@ -247,17 +247,6 @@ export class Reviews extends LitElement {
     `;
   }
 
-  // renderComment(comment: GhComment) {
-  //   return html`
-  //     <div class="comment">
-
-  //       ${this.makeAuthorInfo(comment.author)}
-  //       <p>${comment.body}</p>
-  //       ${this.makeCommentInfo(comment)}
-  //     </div>
-  //   `;
-  // }
-
   render() {
     return html`
       <div class="comment-wrapper">
@@ -268,6 +257,7 @@ export class Reviews extends LitElement {
           </a>
         </p>
         ${this.isLoading ? html`<p>Loading user reviews from GitHub...</p>` : null}
+        ${this.comments.length == 0 && !this.isLoading ? html`<p>Nothing yet. Why don't you be the first to leave a comment?</p>` : null}
         ${this.comments.map(comment => this.renderComment(comment))}
       
       </div>
