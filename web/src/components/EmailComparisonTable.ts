@@ -40,7 +40,7 @@ export class EmailComparisonTable extends LitElement {
     pricing: 'Pricing',
     customDomain: 'Custom Domain',
     aliases: 'Aliases',
-    webClientAccess: 'Web Client Access',
+    webClientAccess: 'Mail Client Support',
     securityAudit: 'Security Audit',
     acceptsCrypto: 'Accepts Crypto',
     personalInfoRequired: 'Personal Info Required',

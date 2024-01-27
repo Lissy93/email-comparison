@@ -50,7 +50,7 @@ export const ATTRIBUTE_KEYS_TITLES = {
   pricing: 'Pricing',
   customDomain: 'Custom Domain',
   aliases: 'Aliases',
-  webClientAccess: 'Web Client Access',
+  webClientAccess: 'Mail Client Support',
   securityAudit: 'Security Audit',
   acceptsCrypto: 'Accepts Crypto',
   personalInfoRequired: 'Personal Info Required',

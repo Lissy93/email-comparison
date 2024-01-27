@@ -854,9 +854,9 @@ mailProviders:
     level: 0
   pricing:
     text: |
-      Free Plan - unlimited domains, aliases, and custom domains.
+      Free Plan - (only forwarding) unlimited domains, aliases, and custom domains.
       Paid plans start from $3/mo and allow SMTP, IMAP, POP3, and API access
-    level: 1
+    level: 2
   customDomain:
     text: 'Yes'
     level: 1
@@ -866,8 +866,10 @@ mailProviders:
       (Unlimited)
     level: 1
   webClientAccess:
-    text: 'No'
-    level: 3
+    text: |
+      Yes (Enhanced and Team Plans)
+      (SMTP, IMAP, POP3) 
+    level: 2
   securityAudit:
     text: 'No'
     level: 3
