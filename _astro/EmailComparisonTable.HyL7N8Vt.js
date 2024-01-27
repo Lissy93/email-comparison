@@ -70,7 +70,7 @@ import{s as Te,n as P,i as vn,r as ue}from"./state.yoBtroVq.js";import{x as y}fr
           ${this.renderTable()}
         </div>
       </section>
-    `}};E.dataPoints=["jurisdiction","encryption","openSource","onionSite","pricing","customDomain","aliases","webClientAccess","securityAudit","acceptsCrypto","personalInfoRequired","mobileApp","activeDevelopment"];E.tableHeadings={jurisdiction:"Jurisdiction",encryption:"Encryption",openSource:"Open Source",onionSite:"Onion Site",pricing:"Pricing",customDomain:"Custom Domain",aliases:"Aliases",webClientAccess:"Web Client Access",securityAudit:"Security Audit",acceptsCrypto:"Accepts Crypto",personalInfoRequired:"Personal Info Required",mobileApp:"Mobile App",activeDevelopment:"Active Development"};E.styles=vn`
+    `}};E.dataPoints=["jurisdiction","encryption","openSource","onionSite","pricing","customDomain","aliases","webClientAccess","securityAudit","acceptsCrypto","personalInfoRequired","mobileApp","activeDevelopment"];E.tableHeadings={jurisdiction:"Jurisdiction",encryption:"Encryption",openSource:"Open Source",onionSite:"Onion Site",pricing:"Pricing",customDomain:"Custom Domain",aliases:"Aliases",webClientAccess:"Mail Client Support",securityAudit:"Security Audit",acceptsCrypto:"Accepts Crypto",personalInfoRequired:"Personal Info Required",mobileApp:"Mobile App",activeDevelopment:"Active Development"};E.styles=vn`
   section {
     max-width: 1000px;
     margin: 0 auto;
