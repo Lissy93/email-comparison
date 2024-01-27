@@ -13,10 +13,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Install and Build 🔧
         run: |
+          cd web
           yarn
           yarn build --public-url https://lissy93.github.io/email-comparison/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: dist
+          folder: web/dist
