@@ -17,7 +17,7 @@ jobs:
         run: |
           cd web
           yarn
-          BASE_URL=${{ env.BASE_URL }} yarn build
+          yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
