@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 permissions: 
   contents: write
+env:
+  BASE_URL: email-comparison/
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -15,7 +17,7 @@ jobs:
         run: |
           cd web
           yarn
-          yarn build --public-url https://lissy93.github.io/email-comparison/
+          BASE_URL=${{ env.BASE_URL }} yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
