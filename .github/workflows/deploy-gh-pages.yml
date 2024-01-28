@@ -5,7 +5,7 @@ on:
 permissions: 
   contents: write
 env:
-  BASE_URL: email-comparison/
+  BASE_URL: email-comparison
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
