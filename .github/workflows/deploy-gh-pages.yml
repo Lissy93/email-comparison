@@ -5,7 +5,7 @@ on:
 permissions: 
   contents: write
 env:
-  BASE_URL: email-comparison
+  # BASE_URL: email-comparison
   SITE: https://lissy93.github.io
 jobs:
   build-and-deploy:
