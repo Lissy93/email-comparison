@@ -1,8 +1,9 @@
-
 ---
-import type { MailProvider, TransformedMailProvider } from '../types/MailServices';
+import type { TransformedMailProvider } from '../types/MailServices';
 import { transformMailProviders } from '../utils/transform-data';
 const { mailProviders, title } = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL;
 
 const getPositives = (service: TransformedMailProvider) => {
   return service.attributes.filter((attribute) => attribute.level === 1).map((attribute) => attribute.title);
@@ -30,7 +31,7 @@ const services = sortServicesByPositives(transformMailProviders(mailProviders));
   <h2>{title || 'Reports'}</h2>
   <div class="links">
     {services.map((service: TransformedMailProvider) => (
-      <a href={`/email/${service.key}`}>
+      <a href={`${baseUrl}email/${service.key}`}>
         <article title={makeSellingPointsString(service)}>
           <div class="top">
             <img width="64" src={service.icon} alt={service.name} />
