@@ -1,8 +1,9 @@
-<h1 align="center">📬 Email Comparison</h1>
+<h1 align="center">Email Comparison</h1>
 <p align="center">
+  <a href="https://email-comparison.as93.net"><img width="96" src="https://i.ibb.co/pPFh021/email-comparison-icon.png" /></a><br>
   <i>An objective comparison of private and/or secure email services</i>
-  <br />
-  <b>🌐 <a href="https://email-comparison.as93.net">email-comparison.as93.net</a></b><br />
+  <br>
+  <b>🌐 <a href="https://email-comparison.as93.net">email-comparison.as93.net</a></b><br>
 </p>
 
 ---
@@ -11,15 +12,17 @@
 
 The aim of Email-Comparison is to provide an objective comparison of so-called private and/or secure email services, so that you can make an informed decision about which provider to use.
 
-This is a community-maintained resource, so if you spot something that should be updated/added/removed, please submit a pull request or raise an issue.
+This is a community-maintained resource, so if you spot something that should be updated/added/removed, please submit a pull request or raise an issue. Or share your thoughts and feedback for an email provider, by writing a short review.
 
-All data is stored in [`email-provider-data.yml`](https://github.com/Lissy93/email-comparison/blob/master/email-provider-data.yml) (in YAML format).
+- 📧 All data is stored in [`email-provider-data.yml`](https://github.com/Lissy93/email-comparison/blob/master/email-provider-data.yml) (in YAML format).
+- ⭐ All mail service reviews are submitted [here, via GitHub Discussions](https://github.com/Lissy93/email-comparison/discussions/categories/reviews).
 
 ---
 
 ## Web Application
 
-The info is most easily consumed via the website, which can be accessed at: **[lissy93.github.io/email-comparison](https://lissy93.github.io/email-comparison)**
+The info is most easily consumed via the website, which can be accessed at:
+**[email-comparison.as93.net](https://email-comparison.as93.net)**
 
 ### Screenshots
 
