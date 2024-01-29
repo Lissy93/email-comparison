@@ -19,7 +19,8 @@ All data is stored in [`email-provider-data.yml`](https://github.com/Lissy93/ema
 
 ## Web Application
 
-The info is most easily consumed via the website, which can be accessed at: **[lissy93.github.io/email-comparison](https://lissy93.github.io/email-comparison)**
+The info is most easily consumed via the website, which can be accessed at:
+**[email-comparison.as93.net](https://email-comparison.as93.net)**
 
 ### Screenshots
 
