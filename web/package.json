@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/lit": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.5",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^4.2.1",
     "js-yaml": "^4.1.0",
