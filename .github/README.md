@@ -70,12 +70,203 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
 ### Contributors
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Lissy93">
+            <img src="https://avatars.githubusercontent.com/u/1862727?v=4" width="80;" alt="Lissy93"/>
+            <br />
+            <sub><b>Alicia Sykes</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/strboul">
+            <img src="https://avatars.githubusercontent.com/u/25015317?v=4" width="80;" alt="strboul"/>
+            <br />
+            <sub><b>Metin Yazici</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/n3rd3x3">
+            <img src="https://avatars.githubusercontent.com/u/57784409?v=4" width="80;" alt="n3rd3x3"/>
+            <br />
+            <sub><b>Nerd</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/amilich">
+            <img src="https://avatars.githubusercontent.com/u/1927690?v=4" width="80;" alt="amilich"/>
+            <br />
+            <sub><b>Andrew Milich</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Mailfence-team">
+            <img src="https://avatars.githubusercontent.com/u/88676580?v=4" width="80;" alt="Mailfence-team"/>
+            <br />
+            <sub><b>Mailfence Team</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/TheFrenchGhosty">
+            <img src="https://avatars.githubusercontent.com/u/47571719?v=4" width="80;" alt="TheFrenchGhosty"/>
+            <br />
+            <sub><b>TheFrenchGhosty</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/momobobe">
+            <img src="https://avatars.githubusercontent.com/u/106522957?v=4" width="80;" alt="momobobe"/>
+            <br />
+            <sub><b>momobobe</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/titanism">
+            <img src="https://avatars.githubusercontent.com/u/101466223?v=4" width="80;" alt="titanism"/>
+            <br />
+            <sub><b>titanism</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 
 ### Sponsors
 
 <!-- readme: sponsors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/koconder">
+            <img src="https://avatars.githubusercontent.com/u/25068?v=4" width="80;" alt="koconder"/>
+            <br />
+            <sub><b>Vincent Koc</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/peng1can">
+            <img src="https://avatars.githubusercontent.com/u/225854?v=4" width="80;" alt="peng1can"/>
+            <br />
+            <sub><b>peng1can</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tbjers">
+            <img src="https://avatars.githubusercontent.com/u/1117052?v=4" width="80;" alt="tbjers"/>
+            <br />
+            <sub><b>Torgny Bjers</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/emlazzarin">
+            <img src="https://avatars.githubusercontent.com/u/1141361?v=4" width="80;" alt="emlazzarin"/>
+            <br />
+            <sub><b>Eddy Lazzarin</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/AnandChowdhary">
+            <img src="https://avatars.githubusercontent.com/u/2841780?v=4" width="80;" alt="AnandChowdhary"/>
+            <br />
+            <sub><b>Anand Chowdhary</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/shrippen">
+            <img src="https://avatars.githubusercontent.com/u/2873570?v=4" width="80;" alt="shrippen"/>
+            <br />
+            <sub><b>shrippen</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/davidpaulyoung">
+            <img src="https://avatars.githubusercontent.com/u/3418369?v=4" width="80;" alt="davidpaulyoung"/>
+            <br />
+            <sub><b>David Young</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/bile0026">
+            <img src="https://avatars.githubusercontent.com/u/5022496?v=4" width="80;" alt="bile0026"/>
+            <br />
+            <sub><b>Zach Biles</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/UlisesGascon">
+            <img src="https://avatars.githubusercontent.com/u/5110813?v=4" width="80;" alt="UlisesGascon"/>
+            <br />
+            <sub><b>Ulises Gascón</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/digitalarche">
+            <img src="https://avatars.githubusercontent.com/u/6546135?v=4" width="80;" alt="digitalarche"/>
+            <br />
+            <sub><b>Digital Archeology</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/bmcgonag">
+            <img src="https://avatars.githubusercontent.com/u/7346620?v=4" width="80;" alt="bmcgonag"/>
+            <br />
+            <sub><b>Brian McGonagill</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/vlad-timofeev">
+            <img src="https://avatars.githubusercontent.com/u/11474041?v=4" width="80;" alt="vlad-timofeev"/>
+            <br />
+            <sub><b>Vlad</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/helixzz">
+            <img src="https://avatars.githubusercontent.com/u/12218889?v=4" width="80;" alt="helixzz"/>
+            <br />
+            <sub><b>HeliXZz</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/forwardemail">
+            <img src="https://avatars.githubusercontent.com/u/32481436?v=4" width="80;" alt="forwardemail"/>
+            <br />
+            <sub><b>Forward Email - Open-source & Privacy-focused Email Service (2023)</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Bastii717">
+            <img src="https://avatars.githubusercontent.com/u/53431819?v=4" width="80;" alt="Bastii717"/>
+            <br />
+            <sub><b>Bastii717</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ratty222">
+            <img src="https://avatars.githubusercontent.com/u/92832598?v=4" width="80;" alt="ratty222"/>
+            <br />
+            <sub><b>Brent</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Glydeon">
+            <img src="https://avatars.githubusercontent.com/u/121807526?v=4" width="80;" alt="Glydeon"/>
+            <br />
+            <sub><b>Byron</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NixyJuppie">
+            <img src="https://avatars.githubusercontent.com/u/138570196?v=4" width="80;" alt="NixyJuppie"/>
+            <br />
+            <sub><b>Nixy</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: sponsors -end -->
 
 ---
