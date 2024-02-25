@@ -108,13 +108,20 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/titanism">
+            <img src="https://avatars.githubusercontent.com/u/101466223?v=4" width="80;" alt="titanism"/>
+            <br />
+            <sub><b>Titanism</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/Mailfence-team">
             <img src="https://avatars.githubusercontent.com/u/88676580?v=4" width="80;" alt="Mailfence-team"/>
             <br />
             <sub><b>Mailfence Team</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/TheFrenchGhosty">
             <img src="https://avatars.githubusercontent.com/u/47571719?v=4" width="80;" alt="TheFrenchGhosty"/>
@@ -127,13 +134,6 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
             <img src="https://avatars.githubusercontent.com/u/106522957?v=4" width="80;" alt="momobobe"/>
             <br />
             <sub><b>Momobobe</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/titanism">
-            <img src="https://avatars.githubusercontent.com/u/101466223?v=4" width="80;" alt="titanism"/>
-            <br />
-            <sub><b>Titanism</b></sub>
         </a>
     </td></tr>
 </table>
@@ -253,12 +253,27 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/frankdez93">
+            <img src="https://avatars.githubusercontent.com/u/87549420?v=4" width="80;" alt="frankdez93"/>
+            <br />
+            <sub><b>frankdez93</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ratty222">
             <img src="https://avatars.githubusercontent.com/u/92832598?u=137b65530cbd5f5af9c24cde51baa6cc77cc934b&v=4" width="80;" alt="ratty222"/>
             <br />
             <sub><b>Brent</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/hernanpopper">
+            <img src="https://avatars.githubusercontent.com/u/104868017?v=4" width="80;" alt="hernanpopper"/>
+            <br />
+            <sub><b>hernanpopper</b></sub>
+        </a>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/NixyJuppie">
             <img src="https://avatars.githubusercontent.com/u/138570196?u=b102c222487905728b858704962d32759df29ebe&v=4" width="80;" alt="NixyJuppie"/>
