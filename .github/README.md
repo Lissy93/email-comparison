@@ -16,6 +16,7 @@ This is a community-maintained resource, so if you spot something that should be
 
 - 📧 All data is stored in [`email-provider-data.yml`](https://github.com/Lissy93/email-comparison/blob/master/email-provider-data.yml) (in YAML format).
 - ⭐ All mail service reviews are submitted [here, via GitHub Discussions](https://github.com/Lissy93/email-comparison/discussions/categories/reviews).
+- 🌐 Website published to [email-comparison.as93.net](https://email-comparison.as93.net/) is built with Lit on Astro.
 
 ---
 
