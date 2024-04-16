@@ -59,14 +59,14 @@ mailProviders:
     text: 'Yes'
     level: 1
 
-# Tutanota
-- name: Tutanota
-  link: https://tutanota.com/
+# Tuta
+- name: Tuta
+  link: https://tuta.com/
   icon: https://i.ibb.co/HhHL1S4/tutanota.png
   discussionId: 21
   description: >
-    A German-based service launched in 2011, Tutanota is open-source and offers a
-    fully encrypted mailbox, calendar, and address book. Tutanota uses their own
+    A German-based service launched in 2011, Tuta is open-source and offers a
+    fully encrypted mailbox, calendar, and address book. Tuta uses their own
     (RSA + AES based) encryption method, to protect more than just the email body
     (including subject, attachments, calendar, contacts, notifications).
   jurisdiction:
