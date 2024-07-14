@@ -95,8 +95,8 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/n3rd3x3">
-            <img src="https://avatars.githubusercontent.com/u/57784409?v=4" width="80;" alt="n3rd3x3"/>
+        <a href="https://github.com/isolume">
+            <img src="https://avatars.githubusercontent.com/u/57784409?v=4" width="80;" alt="isolume"/>
             <br />
             <sub><b>Nerd</b></sub>
         </a>
