@@ -269,7 +269,7 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
     </td>
     <td align="center">
         <a href="https://github.com/semiceau">
-            <img src="https://avatars.githubusercontent.com/u/50425951?v=4" width="80;" alt="semiceau"/>
+            <img src="https://avatars.githubusercontent.com/u/50425951?u=f8c386b966312769f559422adf0dbc7e2f116258&v=4" width="80;" alt="semiceau"/>
             <br />
             <sub><b>GT</b></sub>
         </a>
@@ -301,6 +301,13 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
             <img src="https://avatars.githubusercontent.com/u/121595180?v=4" width="80;" alt="terminaltrove"/>
             <br />
             <sub><b>Terminal Trove</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/st617">
+            <img src="https://avatars.githubusercontent.com/u/128325650?v=4" width="80;" alt="st617"/>
+            <br />
+            <sub><b>st617</b></sub>
         </a>
     </td>
     <td align="center">
