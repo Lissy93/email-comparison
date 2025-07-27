@@ -818,14 +818,14 @@ mailProviders:
     text: 'No'
     level: 3
   acceptsCrypto:
-    text: 'No'
-    level: 3
+    text: 'Yes'
+    level: 1
   personalInfoRequired:
     text: None
     level: 1
   mobileApp:
-    text: 'No'
-    level: 3
+    text: 'Yes (Compatible with any email client; e.g. Apple Mail, Thunderbird Mobile)'
+    level: 2
   activeDevelopment:
     text: 'Yes'
     level: 1
