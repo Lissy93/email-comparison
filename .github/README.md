@@ -269,7 +269,7 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
     </td>
     <td align="center">
         <a href="https://github.com/KraskoP">
-            <img src="https://avatars.githubusercontent.com/u/133645143?v=4" width="80;" alt="KraskoP"/>
+            <img src="https://avatars.githubusercontent.com/u/133645143?u=2d5b55b046d22c4756d55d478ea81780d499c5e0&v=4" width="80;" alt="KraskoP"/>
             <br />
             <sub><b>Krasko</b></sub>
         </a>
