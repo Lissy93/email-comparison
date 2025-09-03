@@ -251,7 +251,7 @@ mailProviders:
     text: 'No'
     level: 3
   onionSite:
-    text: 'No'
+    text: Exit Node available, but no direct access to the web interface through onion site
     level: 3
   pricing:
     text: |
@@ -266,7 +266,8 @@ mailProviders:
   aliases:
     text: |
       Yes
-      25 aliases (Standard Plan).
+      (25 in Standard Plan, €3.00/m)
+      (3 in Light Plan, €1.00/m)
     level: 2
   webClientAccess:
     text: Yes (IMAP, POP3)
@@ -278,10 +279,8 @@ mailProviders:
     text: 'No'
     level: 3
   personalInfoRequired:
-    text: |
-      Requires full name, location,
-      mobile number and recovery email
-    level: 3
+    text: Requires full name
+    level: 2
   mobileApp:
     text: 'No'
     level: 3
