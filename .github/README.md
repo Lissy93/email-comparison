@@ -283,13 +283,6 @@ There's a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [code
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/JDB321Sailor">
-            <img src="https://avatars.githubusercontent.com/u/212125521?v=4" width="80;" alt="JDB321Sailor"/>
-            <br />
-            <sub><b>JDB321Sailor</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Envisage-Cloud-Solutions">
             <img src="https://avatars.githubusercontent.com/u/219464178?v=4" width="80;" alt="Envisage-Cloud-Solutions"/>
             <br />
