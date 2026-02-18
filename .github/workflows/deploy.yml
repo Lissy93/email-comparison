@@ -1,8 +1,8 @@
-name: 🚀 Build and Deploy to GH Pages
-on: 
+name: 🚀 Deploy - Build and publish to GH Pages
+on:
   push:
   workflow_dispatch:
-permissions: 
+permissions:
   contents: write
 env:
   # BASE_URL: email-comparison

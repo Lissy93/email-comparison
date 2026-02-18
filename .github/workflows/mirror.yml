@@ -1,5 +1,5 @@
 # Pushes the contents of the repo to the Codeberg mirror
-name: 🪞 Mirror
+name: 🪞 Mirror - Sync with Codeberg repo
 on:
   schedule: [{ cron: '45 01 * * 0' }]
   push: { tags: ['v*'] }

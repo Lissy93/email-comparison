@@ -1,4 +1,4 @@
-name: PR Checks
+name: 🚦 Check - Validate PR
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   validate-data:
-    name: Validate provider data
+    name: Check YAML
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
           npx -y ajv-cli validate -s schema.json -d /tmp/data.json --strict=false
 
   type-check:
-    name: Type check
+    name: Check Web
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
