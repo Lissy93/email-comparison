@@ -6,7 +6,7 @@ mailProviders:
 # ProtonMail
 - name: ProtonMail
   link: https://proton.me/
-  icon: https://i.ibb.co/J3jvgkR/protonmail.png
+  icon: https://pixelflare.cc/alicia/icons/protonmail/w256
   discussionId: 17
   description: >
     Founded in 2013 in Switzerland by Andy Yen. It offers end-to-end encryption
@@ -63,7 +63,7 @@ mailProviders:
 # Tuta
 - name: Tuta
   link: https://tuta.com/
-  icon: https://i.ibb.co/HhHL1S4/tutanota.png
+  icon: https://pixelflare.cc/alicia/icons/tuta/w256
   discussionId: 21
   description: >
     A German-based service founded in 2011, with the email service launching in
@@ -123,7 +123,7 @@ mailProviders:
 # Criptext
 - name: Criptext
   link: https://criptext.com/
-  icon: https://i.ibb.co/tKhzqJR/criptext.png
+  icon: https://pixelflare.cc/alicia/icons/criptext/w256
   discussionId: 28
   description: >
     A decentralized mail provider that doesn't require the use of any cloud storage
@@ -183,7 +183,7 @@ mailProviders:
 # Mailfence
 - name: Mailfence
   link: https://mailfence.com/
-  icon: https://i.ibb.co/CPjDhfY/mailfence.png
+  icon: https://pixelflare.cc/alicia/icons/mailfence/w256
   discussionId: 22
   description: >
     An OpenPGP-based mail provider, published by ContactOffice Group in 2013.
@@ -239,7 +239,7 @@ mailProviders:
 # Mailbox.org
 - name: Mailbox.org
   link: https://mailbox.org/
-  icon: https://i.ibb.co/jy6wQ4r/mailbox-org.png
+  icon: https://pixelflare.cc/alicia/icons/mailbox-org/w256
   discussionId: 29
   description: >
     German-based PGP-encrypted mail service, operating since 2014. Mailbox.org is
@@ -294,7 +294,7 @@ mailProviders:
 # Soverin
 - name: Soverin
   link: https://soverin.com/
-  icon: https://i.ibb.co/HF10yMr/soverin.png
+  icon: https://pixelflare.cc/alicia/icons/soverin-mail/w256
   discussionId: 30
   description: >
     European no-thrills mail hosting for your custom domain, with a Roundcube
@@ -348,7 +348,7 @@ mailProviders:
 # Posteo
 - name: Posteo
   link: https://posteo.de/en
-  icon: https://i.ibb.co/mBCHSx3/posteo.png
+  icon: https://pixelflare.cc/alicia/icons/posteo/w256
   discussionId: 23
   description: >
     Founded in 2009 by 	Patrik & Sabrina Löhr, the Berlin-based mail provider
@@ -399,7 +399,7 @@ mailProviders:
 # Runbox
 - name: Runbox
   link: https://runbox.com/
-  icon: https://i.ibb.co/68dSFpz/runbox.png
+  icon: https://pixelflare.cc/alicia/icons/runbox/w256
   discussionId: 0
   description: >
     Operating since 2000 in Olso, Runbox emphasizes minimal data retention and
@@ -455,7 +455,7 @@ mailProviders:
 # Kolab Now
 - name: Kolab Now
   link: https://kolabnow.com/
-  icon: https://i.ibb.co/nL7Hyr1/kolab-now.png
+  icon: https://pixelflare.cc/alicia/icons/kolab-now/w256
   discussionId: 26
   description: >
     A Swiss-based service offering a suite of online collaboration tools,
@@ -509,7 +509,7 @@ mailProviders:
 # CounterMail
 - name: CounterMail
   link: https://countermail.com/
-  icon: https://i.ibb.co/4TGTqZX/countermail.png
+  icon: https://pixelflare.cc/alicia/icons/countermail/w256
   discussionId: 20
   description: >
     Operating from Sweden since 2008, CounterMail uses diskless web servers to
@@ -564,7 +564,7 @@ mailProviders:
 # StartMail
 - name: StartMail
   link: https://www.startmail.com/
-  icon: https://i.ibb.co/s6D3jKr/startmail.png
+  icon: https://pixelflare.cc/alicia/icons/startmail/w256
   discussionId: 27
   description: >
     From the creators of StartPage, StartMail was launched in 2014 in the
@@ -619,7 +619,7 @@ mailProviders:
 # Disroot
 - name: Disroot
   link: https://disroot.org/
-  icon: https://i.ibb.co/7NqHScM/disroot.png
+  icon: https://pixelflare.cc/alicia/icons/disroot/w256
   discussionId: 25
   description: >
     A Netherlands-based platform providing decentralized services, Disroot is
@@ -672,7 +672,7 @@ mailProviders:
 # Hushmail
 - name: Hushmail
   link: https://hushmail.com/
-  icon: https://i.ibb.co/HVhZVxT/hushmail.png
+  icon: https://pixelflare.cc/alicia/icons/hushmail/w256
   discussionId: 31
   description: >
     A Canadian-based service founded in 1999, Hushmail was one of the early providers
@@ -729,7 +729,7 @@ mailProviders:
 # LavaBit
 - name: LavaBit
   link: https://lavabit.com/
-  icon: https://i.ibb.co/ww9xcWz/lavabit.png
+  icon: https://pixelflare.cc/alicia/icons/lavabit/w256
   discussionId: 32
   description: >
     Relaunched in 2017, known for its involvement in the Snowden revelations,
@@ -781,7 +781,7 @@ mailProviders:
 # Forward Email
 - name: Forward Email
   link: https://forwardemail.net
-  icon: https://github.com/forwardemail/forwardemail.net/raw/master/assets/img/logo-square-30-30.svg
+  icon: https://pixelflare.cc/alicia/icons/forward-email/w256
   discussionId: 19
   description: >
     An email forwarding service that allows users to create custom email addresses
