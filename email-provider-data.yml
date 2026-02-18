@@ -2,7 +2,7 @@
 # List of mail providers (in no order)
 # Level indicates color (0 = N/A, 1 = Great, 2 = Okay, 3 = Bad)
 mailProviders:
-  
+
 # ProtonMail
 - name: ProtonMail
   link: https://proton.me/
@@ -148,7 +148,7 @@ mailProviders:
       and a catch-all email.
     level: 1
   customDomain:
-    text: |- 
+    text: |-
       Yes
       (Business plan, $15/m)
     level: 2
@@ -633,8 +633,8 @@ mailProviders:
     text: 'No'
     level: 3
   onionSite:
-    text: 'No'
-    level: 3
+    text: 'Yes'
+    level: 1
   pricing:
     text: Free, payment set for each additional feature
     level: 1
@@ -811,7 +811,7 @@ mailProviders:
   webClientAccess:
     text: |
       Yes (Enhanced and Team Plans)
-      (SMTP, IMAP, POP3) 
+      (SMTP, IMAP, POP3)
     level: 2
   securityAudit:
     text: 'No'
