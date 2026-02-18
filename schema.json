@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["mailProviders"],
+  "additionalProperties": false,
+  "properties": {
+    "mailProviders": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "link",
+          "icon",
+          "description",
+          "discussionId",
+          "jurisdiction",
+          "encryption",
+          "openSource",
+          "onionSite",
+          "pricing",
+          "customDomain",
+          "aliases",
+          "webClientAccess",
+          "securityAudit",
+          "acceptsCrypto",
+          "personalInfoRequired",
+          "mobileApp",
+          "activeDevelopment"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "link": { "type": "string" },
+          "icon": { "type": "string" },
+          "description": { "type": "string" },
+          "discussionId": { "type": "integer" },
+          "source": { "type": "string" },
+          "jurisdiction": { "$ref": "#/definitions/textAndLevel" },
+          "encryption": { "$ref": "#/definitions/textAndLevel" },
+          "openSource": { "$ref": "#/definitions/textAndLevel" },
+          "onionSite": { "$ref": "#/definitions/textAndLevel" },
+          "pricing": { "$ref": "#/definitions/textAndLevel" },
+          "customDomain": { "$ref": "#/definitions/textAndLevel" },
+          "aliases": { "$ref": "#/definitions/textAndLevel" },
+          "webClientAccess": { "$ref": "#/definitions/textAndLevel" },
+          "securityAudit": { "$ref": "#/definitions/textAndLevel" },
+          "acceptsCrypto": { "$ref": "#/definitions/textAndLevel" },
+          "personalInfoRequired": { "$ref": "#/definitions/textAndLevel" },
+          "mobileApp": { "$ref": "#/definitions/textAndLevel" },
+          "activeDevelopment": { "$ref": "#/definitions/textAndLevel" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "textAndLevel": {
+      "type": "object",
+      "required": ["text", "level"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string" },
+        "level": { "type": "integer", "minimum": 0, "maximum": 3 }
+      }
+    }
+  }
+}

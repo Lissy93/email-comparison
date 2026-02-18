@@ -2,6 +2,27 @@
   "name": "email-comparison",
   "type": "module",
   "version": "0.0.1",
+  "description": "An objective comparison of private and/or secure email services",
+  "author": "Alicia Sykes <aliciasykes.com>",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lissy93/email-comparison.git"
+  },
+  "homepage": "https://email-comparison.as93.net",
+  "bugs": {
+    "url": "https://github.com/lissy93/email-comparison/issues"
+  },
+  "keywords": [
+    "email",
+    "privacy",
+    "security",
+    "comparison"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,12 +32,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/lit": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/check": "^0.9.6",
+    "@semantic-ui/astro-lit": "^5.1.1",
+    "@astrojs/sitemap": "^3.7.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
-    "astro": "^4.2.1",
-    "js-yaml": "^4.1.0",
+    "astro": "^5.17.2",
+    "js-yaml": "^4.1.1",
     "lit": "^3.1.1",
     "marked": "^11.1.1",
     "sass": "^1.70.0",
@@ -24,5 +45,8 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9"
+  },
+  "resolutions": {
+    "lodash": "^4.17.23"
   }
 }

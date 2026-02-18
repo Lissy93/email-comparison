@@ -1,52 +1,17 @@
-
-
 import { LitElement, html, css } from 'lit';
-import { customElement, state, property } from 'lit/decorators.js';;
-import yaml from 'js-yaml';
-
-import type { MailServices, MailProvider, TextAndLevel } from '../types/MailServices';
-import  './Icon.ts'
-
+import { customElement, state, property } from 'lit/decorators.js';
+import { ATTRIBUTE_KEYS_TITLES, type MailProvider, type TextAndLevel } from '../types/MailServices';
+import './Icon.ts';
 
 @customElement('email-comparison-table')
 export class EmailComparisonTable extends LitElement {
 
-  @state() private isLoading: boolean = true;
   @property({ attribute: false, type: Array }) mailProviders: MailProvider[] = [];
   @state() private sortedColumn: string | null = null;
   @state() private sortAscending: boolean = true;
 
-  static dataPoints = [
-    'jurisdiction',
-    'encryption',
-    'openSource',
-    'onionSite',
-    'pricing',
-    'customDomain',
-    'aliases',
-    'webClientAccess',
-    'securityAudit',
-    'acceptsCrypto',
-    'personalInfoRequired',
-    'mobileApp',
-    'activeDevelopment'
-  ] as const;
-
-  static tableHeadings: Record<typeof EmailComparisonTable.dataPoints[number], string> = {
-    jurisdiction: 'Jurisdiction',
-    encryption: 'Encryption',
-    openSource: 'Open Source',
-    onionSite: 'Onion Site',
-    pricing: 'Pricing',
-    customDomain: 'Custom Domain',
-    aliases: 'Aliases',
-    webClientAccess: 'Mail Client Support',
-    securityAudit: 'Security Audit',
-    acceptsCrypto: 'Accepts Crypto',
-    personalInfoRequired: 'Personal Info Required',
-    mobileApp: 'Mobile App',
-    activeDevelopment: 'Active Development'
-  };
+  static dataPoints = Object.keys(ATTRIBUTE_KEYS_TITLES) as (keyof typeof ATTRIBUTE_KEYS_TITLES)[];
+  static tableHeadings = ATTRIBUTE_KEYS_TITLES;
 
   static styles = css`
   section {
@@ -97,12 +62,9 @@ export class EmailComparisonTable extends LitElement {
     text-align: left;
     max-width: 10rem;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     vertical-align: top;
-    transition: all 0.2s ease-in-out;
     a {
-      color: var(--foreground);
+      color: var(--foreground-head);
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -111,17 +73,37 @@ export class EmailComparisonTable extends LitElement {
   }
 
   th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
     position: sticky;
     top: 0;
     background: var(--foreground-lighter);
     border-top: none;
     z-index: 2;
     border-right: 1px solid var(--foreground-light);
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      color: var(--primary);
+    button {
+      all: unset;
+      cursor: pointer;
+      display: inline;
+      font: inherit;
+      color: inherit;
+      &:hover { color: var(--primary); }
+      &:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
     }
+    .desc icon-component { display: inline-block; transform: scaleY(-1); }
+  }
+
+  .cell-text {
+    display: block;
+    white-space: break-spaces;
+    max-height: 1.5em;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+  }
+
+  tr:hover td:not(:first-child) .cell-text,
+  tr:focus-within td:not(:first-child) .cell-text {
+    max-height: 12em;
   }
 
   tbody tr td:first-child {
@@ -129,11 +111,11 @@ export class EmailComparisonTable extends LitElement {
     left: 0;
     background-color: var(--background);
     z-index: 1;
-    color: var(--foreground);
+    color: var(--foreground-head);
   }
 
   tbody tr td:first-child a {
-    color: var(--foreground);
+    color: var(--foreground-head);
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }
@@ -157,29 +139,7 @@ export class EmailComparisonTable extends LitElement {
     background-color: var(--grey);
   }
 
-  tr:hover td:not(:first-child) {
-    white-space: break-spaces;
-  }
 `;
-
-  firstUpdated() {
-    if (this.mailProviders.length === 0) {
-      this.fetchData();
-    }
-  }
-
-  async fetchData() {
-    try {      
-      const response = await fetch('https://raw.githubusercontent.com/Lissy93/email-comparison/master/src/data.yml');
-      const text = await response.text();
-      const data = yaml.load(text);
-      this.mailProviders = (data as MailServices).mailProviders;
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    } finally {
-      this.isLoading = false;
-    }
-  }
 
   toggleSort(column: string) {
     if (this.sortedColumn === column) {
@@ -223,47 +183,51 @@ export class EmailComparisonTable extends LitElement {
 
   renderCell(data: TextAndLevel) {
     const levelClass = `level-${data.level || 'other'}`;
-    return html`<td class=${levelClass}>${data.text}</td>`;
+    return html`<td class=${levelClass}><span class="cell-text">${data.text}</span></td>`;
+  }
+
+  private sortButton(column: string, label: string) {
+    const isSorted = this.sortedColumn === column;
+    const icon = isSorted ? 'sorted' : 'sort';
+    const btnClass = isSorted && !this.sortAscending ? 'desc' : '';
+    return html`<button class=${btnClass} @click=${() => this.toggleSort(column)}>
+      ${label} <icon-component .iconName=${icon} aria-hidden="true"></icon-component>
+    </button>`;
+  }
+
+  private sortAttr(column: string) {
+    if (this.sortedColumn !== column) return 'none';
+    return this.sortAscending ? 'ascending' : 'descending';
   }
 
   renderHeaders() {
     return html`
       <tr>
-        <th @click=${() => this.toggleSort('name')}>
-          Provider
-          <icon-component .iconName=${this.sortedColumn === 'name' ? 'sorted' : 'sort'}></icon-component>
-        </th>
+        <th scope="col" aria-sort=${this.sortAttr('name')}>${this.sortButton('name', 'Provider')}</th>
         ${EmailComparisonTable.dataPoints.map(point => html`
-          <th @click=${() => this.toggleSort(point)}>
-            ${EmailComparisonTable.tableHeadings[point]}
-            <icon-component .iconName=${this.sortedColumn === point ? 'sorted' : 'sort'}></icon-component>
-          </th>`
+          <th scope="col" aria-sort=${this.sortAttr(point)}>${this.sortButton(point, EmailComparisonTable.tableHeadings[point])}</th>`
         )}
       </tr>
     `;
   }
-  
+
 
   renderProviderRow(provider: MailProvider) {
     return html`
       <tr>
         <td>
-          <img width="16" src=${provider.icon} alt="icon" />
+          <img width="16" height="16" loading="lazy" src=${provider.icon} alt="" />
           <a href=${provider.link}>${provider.name}</a>
         </td>
         ${EmailComparisonTable.dataPoints.map(point => this.renderCell(provider[point]))}
       </tr>
     `;
   }
-  
+
 
   renderTable() {
-    if (this.isLoading && this.mailProviders.length === 0) {
-      return html`<p>Loading...</p>`;
-    }
-
     return html`
-    <table>
+    <table aria-labelledby="table-heading">
       <thead>
         ${this.renderHeaders()}
       </thead>
@@ -277,7 +241,7 @@ export class EmailComparisonTable extends LitElement {
   render() {
     return html`
       <section>
-      <h2>Summary</h2>
+      <h2 id="table-heading">Summary</h2>
       <p class="intro">Scroll horizontally to view further columns, hover over a row to read, click a heading to sort.</p>
         <div class="table-container">
           ${this.renderTable()}

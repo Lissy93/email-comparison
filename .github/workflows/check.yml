@@ -1,0 +1,44 @@
+name: 🚦 Check - Validate PR
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate-data:
+    name: Check YAML
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check YAML syntax
+        run: npx -y js-yaml email-provider-data.yml > /dev/null
+
+      - name: Validate against schema
+        run: |
+          npx -y js-yaml email-provider-data.yml > /tmp/data.json
+          npx -y ajv-cli validate -s schema.json -d /tmp/data.json --strict=false
+
+  type-check:
+    name: Check Web
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+          cache-dependency-path: web/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        working-directory: web
+
+      - name: Run type check
+        run: yarn run check
+        working-directory: web
+

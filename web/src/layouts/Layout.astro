@@ -9,17 +9,18 @@ import MetaTags from '../components/MetaTags.astro';
 
 interface Props {
 	title: string;
-	dontIndex: boolean | undefined;
+	dontIndex?: boolean;
 }
 
 const { title, dontIndex } = Astro.props;
+const noIndexTag = '<meta name="robots" content="noindex">';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<MetaTags />
-		{dontIndex && <meta name="robots" content="noindex" />}
+		{dontIndex && <Fragment set:html={noIndexTag} />}
 		{ title && <title>{title}</title>}
 	</head>
 	<body>

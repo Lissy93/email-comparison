@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-import lit from '@astrojs/lit';
+import lit from '@semantic-ui/astro-lit';
 
 const siteMapFilter = (page) => !page.includes('/summary');
 

@@ -10,8 +10,12 @@ const baseUrl = import.meta.env.BASE_URL;
   </a>
   <div class="links">
     <a href="https://github.com/lissy93/email-comparison">
-      <icon-component iconName="github" />
+      <icon-component iconName="github" iconHeight="22px" iconWidth="24px" />
       GitHub
+    </a>
+    <a href="/about">
+        <icon-component iconName="about" iconHeight="22px" iconWidth="24px" />
+      About
     </a>
   </div>
 </nav>
@@ -34,13 +38,16 @@ const baseUrl = import.meta.env.BASE_URL;
       font-weight: bold;
       display: flex;
       gap: 1rem;
-      
+
     }
     .links {
+      display: flex;
       a {
-        padding: 0.5rem;
+        padding: 0.25rem 0.5rem;
         border-radius: 2rem;
         transition: all 0.2s ease;
+        display: flex;
+        gap: 0.25rem;
         &:hover {
           background: var(--primary-darker);
         }
