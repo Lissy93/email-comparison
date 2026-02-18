@@ -1,7 +1,7 @@
 ---
 import yaml from 'js-yaml';
 
-import type { MailProvider } from '../../types/MailServices';
+import type { MailProvider, MailServices } from '../../types/MailServices';
 import { makeKey } from '../../utils/transform-data';
 import config from '../../utils/config';
 
@@ -10,24 +10,21 @@ import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import ProviderLinks from '../../components/ProviderLinks.astro';
 import ServiceInfo from '../../components/ServiceInfo.astro';
-import  '../../components/Icon'
 
 import { Reviews } from '../../components/Reviews';
 
 const allProviders = await fetch(config.yamlUrl)
   .then(res => res.text())
-  .then(yaml.load)
-  .then(data => data.mailProviders )
-  .catch(
-    error => {
-      console.error('Error fetching data:', error);
-    }
-  );
+  .then(text => (yaml.load(text) as unknown as MailServices).mailProviders)
+  .catch((error): MailProvider[] => {
+    console.error('Error fetching data:', error);
+    return [];
+  });
 
 const provider = allProviders.find(provider => makeKey(provider.name) === Astro.params.provider || '');
 
 export async function getStaticPaths() {
-  const allProvidersData = await fetch(config.yamlUrl).then(res => res.text()).then(yaml.load);
+  const allProvidersData = await fetch(config.yamlUrl).then(res => res.text()).then(yaml.load) as MailServices;
   return allProvidersData.mailProviders.map((provider) => ({
     params: {
       provider: makeKey(provider.name),
@@ -63,7 +60,7 @@ const formatLink = (link: string) => {
     <ServiceInfo provider={provider} />
     <section>
       <h2>Reviews</h2>
-      <Reviews discussionId={provider.discussionId} client:visible />
+      <Reviews {...({discussionId: provider.discussionId} as any)} client:visible />
       <a class="link-button" target="_blank" rel="nofollow"
         href={`https://github.com/lissy93/email-comparison/discussions/${provider.discussionId}`}>Leave a Review</a>
       <p>

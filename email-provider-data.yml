@@ -400,6 +400,7 @@ mailProviders:
 - name: Runbox
   link: https://runbox.com/
   icon: https://i.ibb.co/68dSFpz/runbox.png
+  discussionId: 0
   description: >
     Operating since 2000 in Olso, Runbox emphasizes minimal data retention and
     leverages Norway's privacy laws.

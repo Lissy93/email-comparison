@@ -1,22 +1,20 @@
 ---
 import yaml from 'js-yaml';
 
+import type { MailProvider, MailServices } from '../../../types/MailServices';
 import { makeKey } from '../../../utils/transform-data';
 import config from '../../../utils/config';
 import Layout from '../../../layouts/Layout.astro';
 import { transformMailProviders } from '../../../utils/transform-data';
-import  '../../../components/Icon'
 
 
 const allProviders = await fetch(config.yamlUrl)
   .then(res => res.text())
-  .then(yaml.load)
-  .then(data => data.mailProviders )
-  .catch(
-    error => {
-      console.error('Error fetching data:', error);
-    }
-  );
+  .then(text => (yaml.load(text) as unknown as MailServices).mailProviders)
+  .catch((error): MailProvider[] => {
+    console.error('Error fetching data:', error);
+    return [];
+  });
 
 const provider = allProviders.find(provider => makeKey(provider.name) === Astro.params.provider || '');
 
@@ -25,7 +23,7 @@ metrics.attributes = metrics.attributes.filter((attribute) => attribute.title !=
 
 
 export async function getStaticPaths() {
-  return (await fetch(config.yamlUrl).then(res => res.text()).then(yaml.load)).mailProviders
+  return (await fetch(config.yamlUrl).then(res => res.text()).then(text => yaml.load(text)) as unknown as MailServices).mailProviders
   .map((provider) => ({
     params: { provider: makeKey(provider.name) },
   }));

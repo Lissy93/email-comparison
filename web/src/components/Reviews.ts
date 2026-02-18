@@ -16,6 +16,12 @@ interface GhCommentAuthor {
   name?: string;
   bio?: string;
   createdAt: string;
+  followers?: { totalCount: number };
+}
+
+interface GhReactionGroup {
+  content: GhCommentReactionContent;
+  users: { totalCount: number };
 }
 
 interface GhComment {
@@ -25,14 +31,15 @@ interface GhComment {
   lastEditedAt: string | null;
   upvoteCount: number;
   reactions: GhCommentReaction[];
+  reactionGroups: GhReactionGroup[];
 }
 
 
 
-// @customElement('github-discussion-reviews')
+@customElement('github-discussion-reviews')
 export class Reviews extends LitElement {
   @property({ attribute: false, type: Number }) discussionId: number | undefined;
-  @state() private comments: Comment[] = [];
+  @state() private comments: GhComment[] = [];
   @state() private isLoading: boolean = false;
 
   static styles = css`
@@ -237,7 +244,7 @@ export class Reviews extends LitElement {
   }
 
   renderComment(comment: GhComment) {
-    const sanitizedHtml = this.sanitizeHtml(marked(comment.body));
+    const sanitizedHtml = this.sanitizeHtml(marked(comment.body) as string);
     return html`
       <div class="comment">
         ${this.makeAuthorInfo(comment.author)}
@@ -264,5 +271,3 @@ export class Reviews extends LitElement {
     `;
   }
 }
-
-customElements.define('github-discussion-reviews', Reviews);

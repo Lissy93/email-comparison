@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
-import { property } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 
+@customElement('icon-component')
 export class IconComponent extends LitElement {
   @property() iconName: string = '';
   @property() iconSize: string = '1rem';
@@ -42,5 +43,3 @@ export class IconComponent extends LitElement {
     return html`<span aria-hidden="true">${this.renderIcon()}</span>`;
   }
 }
-
-customElements.define('icon-component', IconComponent);
