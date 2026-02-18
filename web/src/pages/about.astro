@@ -1,26 +1,37 @@
 ---
-import config from '../utils/config';
-
 import Layout from '../layouts/Layout.astro';
-
 import Nav from '../components/Nav.astro';
-import  '../components/Icon'
 
+const projects = [
+	{ name: 'Personal Security Checklist', repo: 'Lissy93/personal-security-checklist', icon: 'digital-defense' },
+	{ name: 'Awesome Privacy', repo: 'Lissy93/awesome-privacy', icon: 'awesome-privacy' },
+];
 
+const selfHostedProjects = [
+	{ name: 'Dashy', repo: 'Lissy93/dashy', icon: 'dashy' },
+	{ name: 'Portainer-Templates', repo: 'Lissy93/portainer-templates', icon: 'portainer-templates' },
+	{ name: 'Domain Locker', repo: 'lissy93/domain-locker', icon: 'domain-locker' },
+	{ name: 'Web-Check', repo: 'lissy93/web-check', icon: 'web-check' },
+	{ name: 'Pixelflare', repo: 'lissy93/pixelflare', icon: 'pixelflare' },
+	{ name: 'AdGuardian Home', repo: 'Lissy93/AdGuardian-Term', icon: 'adguardian' },
+	{ name: 'Networking Toolbox', repo: 'Lissy93/Networking-Toolbox', icon: 'networking-toolbox' },
+];
 ---
-
-
 <Layout title="About | Email Comparison">
-  <Nav />
+	<Nav />
 	<section>
-		<h3>What</h3>
+		<h1>Email Comparison</h1>
+
+		<h2>What</h2>
 		<p>
 			The aim of Email-Comparison is to provide an objective comparison of so-called
 			private and/or secure email services, so that you can make an informed decision
 			about which provider to use.
 		</p>
 
-		<h3>Where</h3>
+		<hr>
+
+		<h2>Where</h2>
 		<p>
 			The official version of this site is hosted at
 			<a href="https://email-comparison.as93.net">email-comparison.as93.net</a><br>
@@ -28,21 +39,20 @@ import  '../components/Icon'
 			<a href="https://github.com/lissy93/email-comparison">github.com/lissy93/email-comparison</a>
 		</p>
 
-		<h3>How</h3>
+		<hr>
+
+		<h2>How</h2>
 		<p>
 			We do not recommend any particular provider, but simply display (what we know as) the facts about each.
 			It is up to you to do your own research, and make a decision based on your personal threat model and requirements.
 		</p>
-		<p>
-			This is a community maintained resource, so if you notice any infomation that
-			appears incorrect / out-dated, please open an issue or PR on the
-			<a href="https://github.com/lissy93/email-comparison">GitHub repo</a>.
-		</p>
 
-		<h3>Why</h3>
+		<hr>
+
+		<h2>Why</h2>
 		<p>
-			We put enourmous trust in our email provider, it's the gateway to all our
-			other online accounts, personal communications and real-life administrtion.
+			We put enormous trust in our email provider, it's the gateway to all our
+			other online accounts, personal communications and real-life administration.
 		</p>
 		<p>
 			At this point, it's a known fact that many mainstream email providers
@@ -55,47 +65,125 @@ import  '../components/Icon'
 			or even how it's being used to manipulate you.
 		</p>
 
-		<h3>Who</h3>
+		<hr>
+
+		<h2>Who</h2>
 		<p>
-			This website was originally created by
-			<a href="https://aliciasykes.com">Alicia Sykes</a> (<a href="https://github.com/lissy93">@Lissy93</a> on GitHub).
-			<br>
+		This is a community maintained resource. Originally created by
+		<a href="https://aliciasykes.com">Alicia Sykes</a> (<a href="https://github.com/lissy93">@Lissy93</a> on GitHub) with support from the following:
+		</p>
+		<img class="users" src="https://readme-contribs.as93.net/contributors/lissy93/email-comparison?avatarSize=64&perRow=12&shape=squircle&fontSize=12&textColor=C1C3C8&outerBorderColor=ffea30&outerBorderRadius=4" alt="contributors badge" width="750" height="100" loading="lazy">
+		<p>
+	    If you want to get involved or notice any information that
+		appears incorrect / out-dated, please open an issue or PR on the
+		<a href="https://github.com/lissy93/email-comparison">GitHub repo</a>, and we'll give you a shout out here!
+		</p>
+		<hr>
+
+		<h2>Support</h2>
+		<p>
+			If you're interested in supporting this project, pull requests are always very welcome (and much appreciated!).
+			As are reviews of email providers in the
+			<a href="https://github.com/Lissy93/email-comparison/discussions/categories/reviews">the discussions tab</a>.
+		</p>
+		<p>
+		    If you're able, consider <a href="https://github.com/sponsors/Lissy93">sponsoring me on GitHub</a> 💖<br>
+		    Thank you to the following sponsors, for making this project (and many others!) possible!
+		</p>
+		<img class="users" src="https://readme-contribs.as93.net/sponsors/lissy93?avatarSize=64&perRow=12&shape=squircle&fontSize=12&textColor=C1C3C8&outerBorderColor=ffea30&outerBorderRadius=4" alt="sponsors badge" width="750" height="100" loading="lazy">
+
+		<hr>
+
+		<h2>Disclaimer</h2>
+		<p>
 			I have a particular interest in privacy, security and cryptography.
 			And as such, it's important to note that I have worked with or for several
 			of the providers listed on this site, as well as several others not included here.
-			BUT none of the infomation here is based on my personal opinion or experience - just facts.
-		</p>
-		<p>
-			My objective is to create applications, resources and tools, to help people take back control of their data.
-			Everything I make is open source.
-			You may also be interested in 
-			<a href="https://github.com/Lissy93/personal-security-checklist/">Personal Security Checklist</a>
-			and <a href="https://github.com/Lissy93/awesome-privacy/">Awesome Privacy</a>.
-			Or, if you're into the world of self-hosting, then I also maintain
-			<a href="https://github.com/Lissy93/dashy">Dashy</a>,
-			<a href="https://github.com/Lissy93/portainer-templates">Portainer-Templates</a>,
-			<a href="https://github.com/Lissy93/AdGuardian-Term">AdGuardian Home</a>
-			and a fork of <a href="https://github.com/lissy93/awesome-selfhosted">Awesome Self-Hosted</a>.
-		</p>
-		<p>
-			You can check out other projects that I've published at <a href="https://apps.aliciasykes.com/">apps.aliciasykes.com</a>
+			BUT none of the information here is based on my personal opinion or experience - just facts.
 		</p>
 
-		<h3>Support</h3>
+		<hr>
+
+		<h2>More</h2>
 		<p>
-			If you're interested in supporting this project, pull requests are always very welcome (and much appriciated!).
-			Alternativley, leave a review / your thoughts on any mail provider listed here, via
-			<a href="https://github.com/Lissy93/email-comparison/discussions/categories/reviews">the discussions tab</a>.<br>
-			If you're able, consider <a href="https://github.com/sponsors/Lissy93">sponsoring me on GitHub</a> 💖
+			My objective is to create applications, resources and tools, to help people take back control of their data.
+			Everything I make is always freely available and open source.<br>
+			If this kind of thing interests you, you might also like:
+		</p>
+		<ul class="project-list">
+			{projects.map(p => (
+				<li><a href={`https://github.com/${p.repo}`}>
+					<img src={`https://cdn.as93.net/logo/${p.icon}?w=32`} width="24" height="24" loading="lazy" alt="" />
+					{p.name}
+				</a></li>
+			))}
+		</ul>
+
+		<p>
+			Or, if you're into the world of self-hosting, then I also maintain
+		</p>
+
+		<ul class="project-list">
+			{selfHostedProjects.map(p => (
+				<li><a href={`https://github.com/${p.repo}`}>
+					<img src={`https://cdn.as93.net/logo/${p.icon}?w=32`} width="24" height="24" loading="lazy" alt="" />
+					{p.name}
+				</a></li>
+			))}
+		</ul>
+
+		<p>
+			You can check out other projects that I've published at <a href="https://apps.aliciasykes.com/">apps.aliciasykes.com</a>
 		</p>
 
 	</section>
 </Layout>
 
-
 <style lang="scss">
-  
+section {
+	margin: 2rem auto;
+	padding: 1rem;
+	border-radius: 4px;
+	background: var(--foreground-lighter);
+}
+hr {
+	width: 100%;
+	margin: 1rem auto;
+	border: 1px solid var(--foreground-lighter);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem auto 0.5rem;
+    width: fit-content;
+    border-bottom: 3px solid var(--primary);
+}
+
+h2 {
+font-size: 1.5rem;
+&::before {
+    content: ">";
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+}
+
+img.users {
+width: 100%;
+height: auto;
+}
+
+.project-list {
+	li a {
+		align-items: center;
+		img {
+			width: 20px;
+			height: auto;
+			margin-right: 0.25rem;
+			vertical-align: middle;
+			border-radius: 4px;
+		}
+	}
+}
 </style>
-
-
-
