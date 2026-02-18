@@ -54,7 +54,7 @@ const formatLink = (link: string) => {
           <a class="link-button" href={provider.source}><icon-component iconName="git" iconWidth="1.2rem" /> Source</a>
         )}
       </div>
-      <img width="128" src={provider.icon} alt={`Icon for ${provider.name}`} />
+      <img width="128" src={provider.icon.replace('/w256', '/w512')} alt={`Icon for ${provider.name}`} />
     </section>
     </header>
     <ServiceInfo provider={provider} />
