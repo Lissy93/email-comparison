@@ -4,9 +4,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-env:
-  # BASE_URL: email-comparison
-  SITE: https://lissy93.github.io/email-comparison
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
