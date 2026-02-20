@@ -37,6 +37,19 @@
           "description": { "type": "string" },
           "discussionId": { "type": "integer" },
           "source": { "type": "string" },
+          "privacyReport": { "type": "string" },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "href"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "href": { "type": "string" }
+              }
+            }
+          },
           "jurisdiction": { "$ref": "#/definitions/textAndLevel" },
           "encryption": { "$ref": "#/definitions/textAndLevel" },
           "openSource": { "$ref": "#/definitions/textAndLevel" },
