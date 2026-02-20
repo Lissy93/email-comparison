@@ -9,6 +9,18 @@ mailProviders:
   icon: https://pixelflare.cc/alicia/icons/protonmail/w256
   discussionId: 17
   privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/protonmail
+  links:
+    - { title: GitHub, href: 'https://github.com/ProtonMail' }
+    - { title: Privacy Policy, href: 'https://proton.me/legal/privacy' }
+    - { title: Security Audits, href: 'https://proton.me/blog/security-audit' }
+    - { title: Transparency Report, href: 'https://proton.me/legal/transparency' }
+    - { title: Bug Bounty, href: 'https://proton.me/security/bug-bounty' }
+    - { title: Status Page, href: 'https://status.proton.me' }
+    - { title: Blog, href: 'https://proton.me/blog' }
+    - { title: Reddit, href: 'https://reddit.com/r/ProtonMail' }
+    - { title: Android App, href: 'https://play.google.com/store/apps/details?id=ch.protonmail.android' }
+    - { title: iOS App, href: 'https://apps.apple.com/app/proton-mail-encrypted-email/id979659905' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/491' }
   description: >
     Founded in 2013 in Switzerland by Andy Yen. It offers end-to-end encryption
     and is under Switzerland's privacy laws. Proton AG also provides VPN, calendar,
@@ -67,6 +79,19 @@ mailProviders:
   icon: https://pixelflare.cc/alicia/icons/tuta/w256
   discussionId: 21
   privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/tuta
+  links:
+    - { title: GitHub, href: 'https://github.com/tutao/tutanota' }
+    - { title: Privacy Policy, href: 'https://tuta.com/privacy-policy' }
+    - { title: Encryption Info, href: 'https://tuta.com/security' }
+    - { title: Transparency Report, href: 'https://tuta.com/blog/transparency-report' }
+    - { title: Status Page, href: 'https://status.tuta.com' }
+    - { title: Blog, href: 'https://tuta.com/blog' }
+    - { title: Reddit, href: 'https://reddit.com/r/tutanota' }
+    - { title: Mastodon, href: 'https://mastodon.social/@Tutanota' }
+    - { title: Android App, href: 'https://play.google.com/store/apps/details?id=de.tutao.tutanota' }
+    - { title: F-Droid, href: 'https://f-droid.org/packages/de.tutao.tutanota/' }
+    - { title: iOS App, href: 'https://apps.apple.com/app/tuta-private-email/id922429609' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/157' }
   description: >
     A German-based service founded in 2011, with the email service launching in
     2014. Tuta is open-source and offers a fully encrypted mailbox, calendar, and
@@ -127,6 +152,8 @@ mailProviders:
   link: https://criptext.com/
   icon: https://pixelflare.cc/alicia/icons/criptext/w256
   discussionId: 28
+  links:
+    - { title: GitHub, href: 'https://github.com/Criptext' }
   description: >
     A decentralized mail provider that doesn't require the use of any cloud storage
     to store or sync messages. Instead emails are received using the client apps
@@ -188,6 +215,15 @@ mailProviders:
   icon: https://pixelflare.cc/alicia/icons/mailfence/w256
   discussionId: 22
   privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/mailfence
+  links:
+    - { title: Privacy Policy, href: 'https://mailfence.com/en/privacy.jsp' }
+    - { title: Encryption Info, href: 'https://mailfence.com/en/secure-email.jsp' }
+    - { title: Transparency Report, href: 'https://blog.mailfence.com/transparency-report-and-warrant-canary/' }
+    - { title: Status Page, href: 'https://www.mfstatus.com' }
+    - { title: Blog, href: 'https://blog.mailfence.com' }
+    - { title: Android App, href: 'https://play.google.com/store/apps/details?id=com.contactoffice.mailfence' }
+    - { title: iOS App, href: 'https://apps.apple.com/app/encrypted-email-mailfence/id1628808776' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/1694' }
   description: >
     An OpenPGP-based mail provider, published by ContactOffice Group in 2013.
     Mailfence focuses on offering support for standard protocols, making it
@@ -245,6 +281,13 @@ mailProviders:
   icon: https://pixelflare.cc/alicia/icons/mailbox-org/w256
   discussionId: 29
   privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/mailbox.org
+  links:
+    - { title: Privacy Policy, href: 'https://mailbox.org/en/data-protection' }
+    - { title: Encryption Info, href: 'https://mailbox.org/en/security' }
+    - { title: Status Page, href: 'https://status.mailbox.org' }
+    - { title: Blog, href: 'https://mailbox.org/en/news' }
+    - { title: Community Forum, href: 'https://userforum-en.mailbox.org' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/1517' }
   description: >
     German-based PGP-encrypted mail service, operating since 2014. Mailbox.org is
     powered by green energy, and also comes bundled with OpenTalk for secure video calls.
@@ -300,6 +343,9 @@ mailProviders:
   link: https://soverin.com/
   icon: https://pixelflare.cc/alicia/icons/soverin-mail/w256
   discussionId: 30
+  links:
+    - { title: Privacy Policy, href: 'https://soverin.com/about/privacy' }
+    - { title: Status Page, href: 'https://status.soverin.net' }
   description: >
     European no-thrills mail hosting for your custom domain, with a Roundcube
     based web client. Founded in 2014 in the Netherlands, their encryption
@@ -354,6 +400,11 @@ mailProviders:
   link: https://posteo.de/en
   icon: https://pixelflare.cc/alicia/icons/posteo/w256
   discussionId: 23
+  links:
+    - { title: Privacy Policy, href: 'https://posteo.de/en/site/privacy_policy' }
+    - { title: Transparency Report, href: 'https://posteo.de/en/site/transparency_report' }
+    - { title: Bug Bounty, href: 'https://hackerone.com/posteo' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/602' }
   description: >
     Founded in 2009 by 	Patrik & Sabrina Löhr, the Berlin-based mail provider
     offers a simple and affordable mail service using only green energy.
@@ -405,6 +456,12 @@ mailProviders:
   link: https://runbox.com/
   icon: https://pixelflare.cc/alicia/icons/runbox/w256
   discussionId: 0
+  links:
+    - { title: GitHub, href: 'https://github.com/runbox' }
+    - { title: Privacy Policy, href: 'https://runbox.com/why-runbox/privacy-protection/' }
+    - { title: Status Page, href: 'https://status.runbox.com' }
+    - { title: Blog, href: 'https://blog.runbox.com' }
+    - { title: Community Forum, href: 'https://community.runbox.com' }
   description: >
     Operating since 2000 in Olso, Runbox emphasizes minimal data retention and
     leverages Norway's privacy laws.
@@ -461,6 +518,10 @@ mailProviders:
   link: https://kolabnow.com/
   icon: https://pixelflare.cc/alicia/icons/kolab-now/w256
   discussionId: 26
+  links:
+    - { title: Source Code, href: 'https://git.kolab.org' }
+    - { title: Privacy Policy, href: 'https://kolabnow.com/privacy' }
+    - { title: Blog, href: 'https://blogs.kolabnow.com' }
   description: >
     A Swiss-based service offering a suite of online collaboration tools,
     including email. It operates under Swiss data protection laws.
@@ -515,6 +576,8 @@ mailProviders:
   link: https://countermail.com/
   icon: https://pixelflare.cc/alicia/icons/countermail/w256
   discussionId: 20
+  links:
+    - { title: Support, href: 'https://support.countermail.com/kb/' }
   description: >
     Operating from Sweden since 2008, CounterMail uses diskless web servers to
     prevent data retention. The service supports end-to-end encryption and is
@@ -570,6 +633,10 @@ mailProviders:
   link: https://www.startmail.com/
   icon: https://pixelflare.cc/alicia/icons/startmail/w256
   discussionId: 27
+  links:
+    - { title: Privacy Policy, href: 'https://startmail.com/privacy' }
+    - { title: Status Page, href: 'https://status.startmail.com' }
+    - { title: Blog, href: 'https://startmail.com/blog' }
   description: >
     From the creators of StartPage, StartMail was launched in 2014 in the
     Netherlands, offering PGP encrypted email and aliases.
@@ -625,6 +692,12 @@ mailProviders:
   link: https://disroot.org/
   icon: https://pixelflare.cc/alicia/icons/disroot/w256
   discussionId: 25
+  links:
+    - { title: Git (Forgejo), href: 'https://git.disroot.org' }
+    - { title: Privacy Policy, href: 'https://disroot.org/privacy_policy' }
+    - { title: Status Page, href: 'https://state.disroot.org' }
+    - { title: Community, href: 'https://disroot.org/community' }
+    - { title: ToS Summary, href: 'https://tosdr.org/en/service/1826' }
   description: >
     A Netherlands-based platform providing decentralized services, Disroot is
     community-driven and focuses on hosting open-source applications,
@@ -678,6 +751,10 @@ mailProviders:
   link: https://hushmail.com/
   icon: https://pixelflare.cc/alicia/icons/hushmail/w256
   discussionId: 31
+  links:
+    - { title: Privacy Policy, href: 'https://www.hushmail.com/privacy' }
+    - { title: Status Page, href: 'https://hushmailstatus.com' }
+    - { title: Blog, href: 'https://blog.hushmail.com' }
   description: >
     A Canadian-based service founded in 1999, Hushmail was one of the early providers
     of encrypted email. While aimed more at small businesses needing complacence,
@@ -735,6 +812,8 @@ mailProviders:
   link: https://lavabit.com/
   icon: https://pixelflare.cc/alicia/icons/lavabit/w256
   discussionId: 32
+  links:
+    - { title: GitHub, href: 'https://github.com/lavabit' }
   description: >
     Relaunched in 2017, known for its involvement in the Snowden revelations,
     LavaBit offers the Dark Mail encryption model. LavaBit's founder also worked
@@ -788,6 +867,11 @@ mailProviders:
   icon: https://pixelflare.cc/alicia/icons/forward-email/w256
   discussionId: 19
   privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/forward-email
+  links:
+    - { title: GitHub, href: 'https://github.com/forwardemail' }
+    - { title: Privacy Policy, href: 'https://forwardemail.net/en/privacy' }
+    - { title: Status Page, href: 'https://status.forwardemail.net' }
+    - { title: Blog, href: 'https://forwardemail.net/en/blog/docs' }
   description: >
     An email forwarding service that allows users to create custom email addresses
     using their own domain. It operates without storing emails on its servers and

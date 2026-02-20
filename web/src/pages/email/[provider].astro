@@ -63,6 +63,32 @@ const formatLink = (link: string) => {
     </section>
     </header>
     <ServiceInfo provider={provider} />
+    {(provider.links?.length || provider.privacyReport) && (
+      <section class="links-section">
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href={provider.link} target="_blank" rel="nofollow" title={`View ${provider.name}'s main website`}>
+                    Website
+                </a>
+            </li>
+          {provider.privacyReport && (
+            <li>
+                <a
+                    href={provider.privacyReport}
+                    target="_blank"
+                    rel="nofollow"
+                    title={`View the privacy report for ${provider.name} on awesome-privacy`}>
+                        Privacy Report
+                </a>
+            </li>
+          )}
+          {provider.links?.map(link => (
+            <li><a href={link.href} target="_blank" rel="nofollow">{link.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
     <section>
       <h2>Reviews</h2>
       <Reviews {...({discussionId: provider.discussionId} as any)} client:visible />
@@ -154,6 +180,29 @@ const formatLink = (link: string) => {
       font-size: 0.8rem;
       margin-top: 1.5rem;
       opacity: 0.75;
+    }
+  }
+  .links-section {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    a {
+      display: block;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--foreground-light);
+      border-radius: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--foreground-body);
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.5s ease-in-out;
+      &:hover {
+        border-color: var(--primary);
+        color: var(--primary);
+        background: color-mix(in lab, var(--primary) 5%, transparent);
+      }
     }
   }
 </style>
