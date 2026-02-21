@@ -34,7 +34,6 @@
   "dependencies": {
     "@astrojs/check": "^0.9.6",
     "@semantic-ui/astro-lit": "^5.1.1",
-    "@astrojs/sitemap": "^3.7.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^5.17.2",
     "js-yaml": "^4.1.1",

@@ -40,8 +40,12 @@ yarn dev # Then pop open localhost:4321 to see the running app
 ### Deploying
 
 To deploy the app, either run `yarn build` and then upload the contents of `./dist` to any web server/ static hosting provider or CDN, or simply run with `yarn start`.
-Alternatively, deploy to GitHub Pages, by forking the repo and triggering the the [Deploy Workflow](https://github.com/Lissy93/email-comparison/actions/workflows/deploy.yml), or deploy to Vercel  
-To deploy to Vercel, fork the repo, and then import it into Vercel
+
+Alternatively, to deploy to a cloud static hosting provider, just fork the repo, and then either:
+- Trigger the [Deploy Workflow](https://github.com/Lissy93/email-comparison/actions/workflows/deploy.yml) workflow, which will build the app into the `gh-pages` branch and publish to GitHub pages, or any other location you like
+- Or, just import your fork into Vercel, Netlify or similar provider, and it will be automatically deployed to a domain of your choice.
+
+We also have a Docker image published, which can be run with: `docker run -p 8080:80 ghcr.io/lissy93/email-comparison:latest`
 
 ---
 
