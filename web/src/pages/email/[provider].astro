@@ -47,11 +47,16 @@ const formatLink = (link: string) => {
       <div class="summary">
         <p>{provider.description}</p>
         <a class="link-button" href={provider.link}>
-          <icon-component iconName="website" iconHeight="1rem" iconWidth="1.2rem" />
+          <icon-component iconName="website" iconHeight="1.4rem" iconWidth="1.4rem" />
           {formatLink(provider.link)}
         </a>
         {provider.source && (
-          <a class="link-button" href={provider.source}><icon-component iconName="git" iconWidth="1.2rem" /> Source</a>
+          <a class="link-button" href={provider.source}><icon-component iconName="git" iconHeight="1.4rem" iconWidth="1.4rem" /> Source</a>
+        )}
+        {provider.privacyReport && (
+          <a class="link-button" href={provider.privacyReport} target="_blank" rel="nofollow">
+              <icon-component iconName="privacy-report" iconHeight="1.4rem" iconWidth="1.4rem" /> Privacy Report
+          </a>
         )}
       </div>
       <img width="128" src={provider.icon.replace('/w256', '/w512')} alt={`Icon for ${provider.name}`} />
@@ -115,10 +120,35 @@ const formatLink = (link: string) => {
       padding: 0.5rem 1rem;
       border-radius: 2rem;
       font-size: 1.2rem;
-      margin: 0 1rem 0 0;
-      :global(icon-component) {
-        margin-right: 0.25rem;
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto 0.5rem;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%);
+        translate: -100% 0;
+        transition: translate 0.5s ease;
       }
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+        &::after { translate: 100% 0; }
+      }
+      &:active { transform: translateY(0) scale(0.97); }
+      :global(icon-component) {
+        vertical-align: middle;
+        width: 1.4rem;
+        height: 1.4rem;
+        transition: transform 0.1s ease;
+      }
+      &:hover :global(icon-component) { transform: scale(1.15); }
     }
     .smaller {
       font-size: 0.8rem;

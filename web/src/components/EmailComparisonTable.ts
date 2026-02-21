@@ -138,6 +138,9 @@ export class EmailComparisonTable extends LitElement {
   .level-0, .level-other {
     background-color: var(--grey);
   }
+  .has-info {
+    background-color: var(--blue);
+  }
 
 `;
 
@@ -207,6 +210,7 @@ export class EmailComparisonTable extends LitElement {
         ${EmailComparisonTable.dataPoints.map(point => html`
           <th scope="col" aria-sort=${this.sortAttr(point)}>${this.sortButton(point, EmailComparisonTable.tableHeadings[point])}</th>`
         )}
+        <th scope="col">Privacy Report</th>
       </tr>
     `;
   }
@@ -220,6 +224,9 @@ export class EmailComparisonTable extends LitElement {
           <a href=${provider.link}>${provider.name}</a>
         </td>
         ${EmailComparisonTable.dataPoints.map(point => this.renderCell(provider[point]))}
+        ${provider.privacyReport
+          ? html`<td class="has-info"><a href=${provider.privacyReport} target="_blank" rel="nofollow">View Report ↗</a></td>`
+          : html`<td>—</td>`}
       </tr>
     `;
   }

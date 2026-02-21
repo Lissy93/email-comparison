@@ -8,6 +8,7 @@ mailProviders:
   link: https://proton.me/
   icon: https://pixelflare.cc/alicia/icons/protonmail/w256
   discussionId: 17
+  privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/protonmail
   description: >
     Founded in 2013 in Switzerland by Andy Yen. It offers end-to-end encryption
     and is under Switzerland's privacy laws. Proton AG also provides VPN, calendar,
@@ -65,6 +66,7 @@ mailProviders:
   link: https://tuta.com/
   icon: https://pixelflare.cc/alicia/icons/tuta/w256
   discussionId: 21
+  privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/tuta
   description: >
     A German-based service founded in 2011, with the email service launching in
     2014. Tuta is open-source and offers a fully encrypted mailbox, calendar, and
@@ -185,6 +187,7 @@ mailProviders:
   link: https://mailfence.com/
   icon: https://pixelflare.cc/alicia/icons/mailfence/w256
   discussionId: 22
+  privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/mailfence
   description: >
     An OpenPGP-based mail provider, published by ContactOffice Group in 2013.
     Mailfence focuses on offering support for standard protocols, making it
@@ -241,6 +244,7 @@ mailProviders:
   link: https://mailbox.org/
   icon: https://pixelflare.cc/alicia/icons/mailbox-org/w256
   discussionId: 29
+  privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/mailbox.org
   description: >
     German-based PGP-encrypted mail service, operating since 2014. Mailbox.org is
     powered by green energy, and also comes bundled with OpenTalk for secure video calls.
@@ -783,6 +787,7 @@ mailProviders:
   link: https://forwardemail.net
   icon: https://pixelflare.cc/alicia/icons/forward-email/w256
   discussionId: 19
+  privacyReport: https://awesome-privacy.xyz/communication/encrypted-email/forward-email
   description: >
     An email forwarding service that allows users to create custom email addresses
     using their own domain. It operates without storing emails on its servers and
