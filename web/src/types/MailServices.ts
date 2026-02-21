@@ -10,6 +10,7 @@ export interface MailProvider {
   discussionId: number;
   source?: string;
   privacyReport?: string;
+  links?: { title: string; href: string }[];
   jurisdiction: TextAndLevel;
   encryption: TextAndLevel;
   openSource: TextAndLevel;
