@@ -1,0 +1,92 @@
+---
+import yaml from 'js-yaml';
+
+import type { MailProvider, MailServices } from '../types/MailServices';
+
+import Layout from '../layouts/Layout.astro';
+import ProviderLinks from '../components/ProviderLinks.astro';
+import config from '../utils/config.ts';
+
+let mailProvidersData: MailProvider[] = [];
+try {
+  const response = await fetch(config.yamlUrl);
+  const text = await response.text();
+  const data = yaml.load(text) as MailServices;
+  mailProvidersData = data.mailProviders;
+} catch (error) {
+  console.error('Error fetching data:', error);
+}
+---
+
+<Layout title="404 - Page Not Found" dontIndex={true}>
+  <main>
+    <header>
+      <h1>404</h1>
+      <p class="subtitle">Page not found</p>
+      <p class="description">The page you're looking for doesn't exist or has been moved.</p>
+      <a class="home-link" href="/">Back to Home</a>
+      <div class="secondary-links">
+        <a href="/about">About</a>
+        <a href={config.repo} target="_blank" rel="nofollow">Source</a>
+      </div>
+    </header>
+    {mailProvidersData.length > 0 && (
+      <ProviderLinks mailProviders={mailProvidersData} title="Were you looking for..." />
+    )}
+  </main>
+</Layout>
+
+<style lang="scss">
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    background: var(--foreground-lighter);
+  }
+  h1 {
+    color: var(--primary);
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+  }
+  .subtitle {
+    color: var(--foreground-head);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+  }
+  .description {
+    color: var(--foreground-body);
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .home-link {
+    font-size: 1.2rem;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.8rem;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      background-color: var(--primary);
+      color: var(--background);
+    }
+  }
+  .secondary-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    a {
+      color: var(--foreground-body);
+      font-size: 0.95rem;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+</style>
