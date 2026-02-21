@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://email-comparison.as93.net/sitemap-index.xml
