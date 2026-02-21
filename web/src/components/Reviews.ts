@@ -58,6 +58,9 @@ export class Reviews extends LitElement {
     }
 
     
+    .comment img {
+      max-width: 100%;
+    }
     .comment {
       border: 1px solid var(--foreground-lighter);
       padding: 0.5rem;
