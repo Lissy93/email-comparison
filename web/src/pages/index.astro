@@ -8,6 +8,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import ProviderLinks from '../components/ProviderLinks.astro';
 import Intro from '../components/Intro.astro';
+import SecurityTipsCta from '../components/SecurityTipsCta.astro';
 import { EmailComparisonTable } from '../components/EmailComparisonTable.ts';
 import config from '../utils/config.ts';
 
@@ -30,6 +31,7 @@ try {
 		<ProviderLinks mailProviders={mailProvidersData} />
 		<EmailComparisonTable {...({mailProviders: mailProvidersData} as any)} client:idle />
 		<Intro />
+		<SecurityTipsCta />
 	</main>
 </Layout>
 

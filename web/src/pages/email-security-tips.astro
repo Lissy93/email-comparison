@@ -1,54 +1,144 @@
 ---
 import { marked } from 'marked';
 
-import config from '../utils/config';
-import { bestPracticesData, introduction } from '../utils/best-practices-data';
+import { sections, introduction } from '../utils/best-practices-data';
 
 import Layout from '../layouts/Layout.astro';
-
 import Nav from '../components/Nav.astro';
-import  '../components/Icon'
 
+const title = 'Email Security Tips | Email Comparison';
+const description =
+  'Practical email security tips to protect your inbox — from choosing a provider and configuring your client settings, to encryption, 2FA, and regular account audits.';
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: sections.flatMap((section) =>
+    section.tips.map((tip) => ({
+      '@type': 'Question',
+      name: tip.title,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: tip.description.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'),
+      },
+    }))
+  ),
+};
 ---
 
-
-<Layout title="About | Email Comparison">
+<Layout title={title} description={description}>
   <Nav />
   <header>
-    <h1>Email Privacy & Security: Best Practices</h1>
-    { introduction.map((paragraph) => (
+    <h1>Email Security Tips</h1>
+    {introduction.map((paragraph) => (
       <Fragment set:html={marked(paragraph)} />
     ))}
-  </header>
-	<section>
-    
-    <article>
-      {bestPracticesData.map((practice) => (
-        <div class="best-practice">
-          <h3>{practice.title}</h3>
-          <Fragment set:html={marked(practice.description)} />          
-        </div>
+    <nav class="section-nav" aria-label="Page sections">
+      {sections.map((section) => (
+        <a href={`#${section.id}`}>{section.longTitle || section.title}</a>
       ))}
-    </article>
-  </section>
+    </nav>
+  </header>
+
+  {sections.map((section) => (
+    <section id={section.id}>
+      <h2>{section.title}</h2>
+      <ul>
+        {section.tips.map((tip) => (
+          <li>
+            <h3>{tip.title}</h3>
+            <Fragment set:html={marked(tip.description)} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </Layout>
 
-
 <style lang="scss">
-  header {
-    background: var(--foreground-lighter);
-    padding: 4rem;
-    h1 {
-      margin: 0;
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--foreground-lighter);
+  padding: 2rem 4rem 1.5rem;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto 0.5rem;
+    width: fit-content;
+    border-bottom: 3px solid var(--primary);
+  }
+  :global(p) {
+    max-width: 720px;
+    margin: 0.5rem auto;
+    line-height: 1.6;
+  }
+}
+
+.section-nav {
+max-width: 720px;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+display: grid;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem auto 0;
+  max-width: 720px;
+  a {
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    background: var(--primary);
+    color: var(--background);
+    text-decoration: none;
+    transition: background 0.2s ease;
+    &:hover {
+      background: var(--primary-darker);
     }
   }
-  section {
-    h1 {
-      font-size: 2rem;
+}
+
+section {
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  background: var(--foreground-lighter);
+}
+
+h2 {
+  font-size: 1.5rem;
+  &::before {
+    content: ">";
+    color: var(--primary);
+    margin-right: 0.5rem;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  h3 {
+    display: block;
+    margin: 0 0 0.25rem;
+    font-size: 1.05rem;
+  }
+  :global(p) {
+    margin: 0;
+  }
+  :global(a) {
+    color: var(--primary);
+    &:hover {
+      text-decoration: underline;
     }
   }
+}
 </style>
-
-
-

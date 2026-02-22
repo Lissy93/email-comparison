@@ -137,6 +137,12 @@ const formatLink = (link: string) => {
         width: 8rem;
         border-radius: 4px;
       }
+         @media (max-width: 600px) {
+          flex-direction: column-reverse;
+          img {
+             width: 6rem;
+          }
+        }
     }
   }
   section {
