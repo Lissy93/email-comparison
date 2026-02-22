@@ -1,0 +1,165 @@
+import{n as d,t as p,a as g,i as w,r as u}from"./state.B5KaWS7l.js";import{b as t}from"./lit-html.Itu0JYEK.js";const v={jurisdiction:"Jurisdiction",encryption:"Encryption",openSource:"Open Source",onionSite:"Onion Site",pricing:"Pricing",customDomain:"Custom Domain",aliases:"Aliases",webClientAccess:"Mail Client Support",securityAudit:"Security Audit",acceptsCrypto:"Accepts Crypto",personalInfoRequired:"Personal Info Required",mobileApp:"Mobile App",activeDevelopment:"Active Development"};var C=Object.defineProperty,b=Object.getOwnPropertyDescriptor,h=(e,r,o,s)=>{for(var c=s>1?void 0:s?b(r,o):r,i=e.length-1,l;i>=0;i--)(l=e[i])&&(c=(s?l(r,o,c):l(c))||c);return s&&c&&C(r,o,c),c};let a=class extends g{constructor(){super(...arguments),this.iconName="",this.iconSize="1rem",this.iconWidth="",this.iconHeight="",this.iconColor="currentColor"}renderIcon(){const e=`width: ${this.iconWidth||this.iconSize||"1rem"}; height: ${this.iconHeight||this.iconSize||"1rem"}; fill: ${this.iconColor||"currentColor"};`;switch(this.iconName){case"email":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176V384c0 35.3 28.7 64 64 64H360.2C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"/></svg>`;case"github":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>`;case"sort":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M70.6 176H249.4L160 86.6 70.6 176zm112-134.6l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128c12.5-12.5 32.8-12.5 45.3 0zM70.6 336L160 425.4 249.4 336H70.6zm112 134.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>`;case"sorted":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"/></svg>`;case"website":return t`<svg  style="${e}"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H281.8l12.6-42.8c10.7-36.4-23.1-70.3-59.6-59.6l-74.6 21.9c.4-16.3 1.5-32.2 3.1-47.5H348.7c2.2 20.4 3.3 41.8 3.3 64zM20.4 280.6c-7.1 2.1-13.1 5.5-18.1 9.9C.8 279.2 0 267.7 0 256c0-22.1 2.8-43.5 8.1-64H131.2c-1.9 18.4-2.9 37.4-3.1 57L20.4 280.6zM231.4 491.6L272.4 352h71.9c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512c-7.2 0-16.3-3.1-27.3-13.4c1-2.2 1.9-4.6 2.7-7.1zM380.8 192H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-325.7 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7H167.7zm-32.4 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM493.4 352c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4zM39 308.5l204.8-60.2c12.1-3.6 23.4 7.7 19.9 19.9L203.5 473c-4.1 13.9-23.2 15.6-29.7 2.6l-28.7-57.3c-.7-1.3-1.5-2.6-2.5-3.7l-88 88c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l88-88c-1.1-1-2.3-1.9-3.7-2.5L36.4 338.2c-13-6.5-11.3-25.6 2.6-29.7z"/></svg>`;case"git":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.9-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.4 0 411.7c0 32.1 28.1 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1zm-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2zm133.3 100.5v-32.1c26.8-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9H324v168.7c0 6.5 .4 7.3 6.5 8.1l20.7 2.8v32.1zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6zM512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1.1-4.1-31.7-4.1V154.5c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.7h-60.6v97.2c0 6.9-4.9 51.4 60.6 26.8z"/></svg>`;case"skull":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9c0 .4 0 .7 0 1.1v64c0 26.5 21.5 48 48 48h48V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48V400c0-.4 0-.7 0-1.1zM96 256a64 64 0 1 1 128 0A64 64 0 1 1 96 256zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>`;case"hundred":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M163 101.8C168 61.9 201.9 32 242 32c47.9 0 85 42 79 89.5L309 218.2c-5 39.8-38.9 69.8-79 69.8c-47.9 0-85-42-79-89.5L163 101.8zM242 96c-7.9 0-14.5 5.9-15.5 13.7l-12.1 96.7c-1.2 9.3 6.1 17.6 15.5 17.6c7.9 0 14.5-5.9 15.5-13.7l12.1-96.7c1.2-9.3-6.1-17.6-15.5-17.6zM135.7 68l-32 224c-2.5 17.5-18.7 30-36.2 27.7S37.8 301.5 40.3 284L64.3 116.5l-19.7 8.7c-16.2 7.2-35.1 0-42-16.1s.6-35.1 16.8-42.3l72-32c10.6-4.7 22.9-3.4 32.1 3.5s13.8 18.2 12.2 29.7zm376 247.5c2.5 17.5-9.7 33.7-27.2 36.2l-448 64C19 418.2 2.8 406 .3 388.5S10 354.8 27.5 352.3l448-64c17.5-2.5 33.7 9.7 36.2 27.2zm0 96c2.5 17.5-9.7 33.7-27.2 36.2l-224 32c-17.5 2.5-33.7-9.7-36.2-27.2s9.7-33.7 27.2-36.2l224-32c17.5-2.5 33.7 9.7 36.2 27.2zM427.7 32c46.9 0 83.7 40.3 79.5 87l-7.3 80.4c-3.7 41.1-38.2 72.6-79.5 72.6c-46.9 0-83.7-40.3-79.5-87l7.3-80.4C351.9 63.5 386.4 32 427.7 32zm-15.7 78.4l-7.3 80.4c-.8 9.3 6.4 17.2 15.7 17.2c8.2 0 15-6.2 15.7-14.4l7.3-80.4c.8-9.3-6.4-17.2-15.7-17.2c-8.2 0-15 6.2-15.7 14.4z"/></svg>`;case"thumb":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"/></svg>`;case"question":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>`;case"about":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/></svg>`;case"privacy-report":return t`<svg style="${e}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M432 96L432 224L448 224C460.4 224 471.2 231.1 476.5 241.5C444.1 246.4 415.7 263.6 396.1 288L352 288C334.3 288 320 273.7 320 256C320 238.3 334.3 224 352 224L368 224L368 140.4L362.1 142.4C345.3 148 327.2 138.9 321.6 122.2C316 105.5 325.1 87.3 341.8 81.7L389.8 65.7C399.6 62.4 410.4 64 418.7 70C427 76 432 85.7 432 96zM352 352L369 352C368.3 357.2 368 362.6 368 368L368 392.4C348.4 410 336 435.5 336 463.9L336 559.9C336 564.8 336.4 569.6 337.1 574.2C309 567.5 288 542.2 288 512L288 416C288 380.7 316.7 352 352 352zM208 384L208 512L224 512C241.7 512 256 526.3 256 544C256 561.7 241.7 576 224 576L128 576C110.3 576 96 561.7 96 544C96 526.3 110.3 512 128 512L144 512L144 428.4L138.1 430.4C121.3 436 103.2 426.9 97.6 410.2C92 393.5 101.1 375.3 117.8 369.7L165.8 353.7C175.6 350.4 186.3 352.1 194.6 358.1C202.9 364.1 208 373.7 208 384zM96 128C96 92.7 124.7 64 160 64L224 64C259.3 64 288 92.7 288 128L288 224C288 259.3 259.3 288 224 288L160 288C124.7 288 96 259.3 96 224L96 128zM224 128L160 128L160 224L224 224L224 128zM528 368.1C528 350.4 513.7 336.1 496 336.1C478.3 336.1 464 350.4 464 368.1L464 416L528 416L528 368.1zM384 464C384 443.1 397.4 425.3 416 418.7L416 368.1C416 323.9 451.8 288.1 496 288.1C540.2 288.1 576 323.9 576 368.1L576 418.7C594.6 425.3 608 443.1 608 464L608 560C608 586.5 586.5 608 560 608L432 608C405.5 608 384 586.5 384 560L384 464z"/></svg>`;default:return t``}}render(){return t`${this.renderIcon()}`}};h([d()],a.prototype,"iconName",2);h([d()],a.prototype,"iconSize",2);h([d()],a.prototype,"iconWidth",2);h([d()],a.prototype,"iconHeight",2);h([d()],a.prototype,"iconColor",2);a=h([p("icon-component")],a);var f=Object.defineProperty,y=Object.getOwnPropertyDescriptor,m=(e,r,o,s)=>{for(var c=s>1?void 0:s?y(r,o):r,i=e.length-1,l;i>=0;i--)(l=e[i])&&(c=(s?l(r,o,c):l(c))||c);return s&&c&&f(r,o,c),c};let n=class extends g{constructor(){super(...arguments),this.mailProviders=[],this.sortedColumn=null,this.sortAscending=!0}toggleSort(e){this.sortedColumn===e?this.sortAscending=!this.sortAscending:(this.sortedColumn=e,this.sortAscending=!0),this.sortData()}sortData(){this.mailProviders=[...this.mailProviders].sort((e,r)=>{let o=this.getValue(e,this.sortedColumn),s=this.getValue(r,this.sortedColumn);return typeof o=="number"&&typeof s=="number"?this.sortAscending?o-s:s-o:(o=o.toString().toLowerCase(),s=s.toString().toLowerCase(),o<s?this.sortAscending?-1:1:o>s?this.sortAscending?1:-1:0)})}getValue(e,r){if(r==="name")return e.name;const o=e[r];return o.level||o.text}renderCell(e){const r=`level-${e.level||"other"}`;return t`<td class=${r}><span class="cell-text">${e.text}</span></td>`}sortButton(e,r){const o=this.sortedColumn===e,s=o?"sorted":"sort",c=o&&!this.sortAscending?"desc":"";return t`<button class=${c} @click=${()=>this.toggleSort(e)}>
+      ${r} <icon-component .iconName=${s} aria-hidden="true"></icon-component>
+    </button>`}sortAttr(e){return this.sortedColumn!==e?"none":this.sortAscending?"ascending":"descending"}renderHeaders(){return t`
+      <tr>
+        <th scope="col" aria-sort=${this.sortAttr("name")}>${this.sortButton("name","Provider")}</th>
+        ${n.dataPoints.map(e=>t`
+          <th scope="col" aria-sort=${this.sortAttr(e)}>${this.sortButton(e,n.tableHeadings[e])}</th>`)}
+        <th scope="col">Privacy Report</th>
+      </tr>
+    `}renderProviderRow(e){return t`
+      <tr>
+        <td>
+          <img width="16" height="16" loading="lazy" src=${e.icon} alt="" />
+          <a href=${e.link}>${e.name}</a>
+        </td>
+        ${n.dataPoints.map(r=>this.renderCell(e[r]))}
+        ${e.privacyReport?t`<td class="has-info"><a href=${e.privacyReport} target="_blank" rel="nofollow">View Report ↗</a></td>`:t`<td>—</td>`}
+      </tr>
+    `}renderTable(){return t`
+    <table aria-labelledby="table-heading">
+      <thead>
+        ${this.renderHeaders()}
+      </thead>
+      <tbody>
+        ${this.mailProviders.map(e=>this.renderProviderRow(e))}
+      </tbody>
+    </table>
+    `}render(){return t`
+      <section>
+      <h2 id="table-heading">Summary</h2>
+      <p class="intro">Scroll horizontally to view further columns, hover over a row to read, click a heading to sort.</p>
+        <div class="table-container">
+          ${this.renderTable()}
+        </div>
+      </section>
+    `}};n.dataPoints=Object.keys(v);n.tableHeadings=v;n.styles=w`
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80vw;
+    padding: 1.8rem;
+  }
+
+  h2 {
+    color: var(--foreground-head);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .intro {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    border-radius: 3px;
+    border: 1px solid var(--foreground-light);
+    &::-webkit-scrollbar {
+      height: 10px;
+      background-color: var(--background);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--primary);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track  {
+      background-color: var(--background);
+    }
+  }
+
+  table {
+    min-width: max-content;
+    border-collapse: collapse;
+    background-color: var(--background);
+    color: var(--foreground-body);
+  }
+
+  th, td {
+    border: 1px solid var(--foreground-light);
+    padding: 0.5rem;
+    text-align: left;
+    max-width: 10rem;
+    overflow: hidden;
+    vertical-align: top;
+    a {
+      color: var(--foreground-head);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--foreground-lighter);
+    border-top: none;
+    z-index: 2;
+    border-right: 1px solid var(--foreground-light);
+    button {
+      all: unset;
+      cursor: pointer;
+      display: inline;
+      font: inherit;
+      color: inherit;
+      &:hover { color: var(--primary); }
+      &:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    }
+    .desc icon-component { display: inline-block; transform: scaleY(-1); }
+  }
+
+  .cell-text {
+    display: block;
+    white-space: break-spaces;
+    max-height: 1.5em;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+  }
+
+  tr:hover td:not(:first-child) .cell-text,
+  tr:focus-within td:not(:first-child) .cell-text {
+    max-height: 12em;
+  }
+
+  tbody tr td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--background);
+    z-index: 1;
+    color: var(--foreground-head);
+  }
+
+  tbody tr td:first-child a {
+    color: var(--foreground-head);
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+
+  th:first-child {
+    left: 0;
+    z-index: 3;
+    background: var(--background);
+  }
+
+  .level-1 {
+    background-color: var(--green);
+  }
+  .level-2 {
+    background-color: var(--amber);
+  }
+  .level-3 {
+    background-color: var(--red);
+  }
+  .level-0, .level-other {
+    background-color: var(--grey);
+  }
+  .has-info {
+    background-color: var(--blue);
+  }
+
+`;m([d({attribute:!1,type:Array})],n.prototype,"mailProviders",2);m([u()],n.prototype,"sortedColumn",2);m([u()],n.prototype,"sortAscending",2);n=m([p("email-comparison-table")],n);export{n as EmailComparisonTable};
