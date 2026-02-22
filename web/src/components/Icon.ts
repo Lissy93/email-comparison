@@ -42,6 +42,6 @@ export class IconComponent extends LitElement {
   }
 
   render() {
-    return html`<span aria-hidden="true">${this.renderIcon()}</span>`;
+    return html`${this.renderIcon()}`;
   }
 }

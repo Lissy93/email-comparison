@@ -1,55 +1,239 @@
 ---
 import './Icon';
+import yaml from 'js-yaml';
+import type { MailProvider, MailServices } from '../types/MailServices';
+import { makeKey } from '../utils/transform-data';
+import config from '../utils/config';
+
 const baseUrl = import.meta.env.BASE_URL;
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isProviderPage = pathname.startsWith('/email/');
+
+const providers = await fetch(config.yamlUrl)
+  .then(res => res.text())
+  .then(text => (yaml.load(text) as unknown as MailServices).mailProviders)
+  .catch(() => [] as MailProvider[]);
 ---
 
-<nav>
+<nav class="main-nav" aria-label="Main navigation">
   <a class="site-name" href={baseUrl}>
     <icon-component iconName="email" iconWidth="2rem" iconHeight="1.8rem" />
-    <span class="site-name">Email Comparison</span>
+    <span>Email Comparison</span>
   </a>
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
   <div class="links">
-    <a href="https://github.com/lissy93/email-comparison">
-      <icon-component iconName="github" iconHeight="22px" iconWidth="24px" />
-      GitHub
+    <div class:list={['dropdown', { active: isProviderPage }]}>
+      <button class:list={['dropdown-trigger', { current: isProviderPage }]} aria-expanded="false">
+        Email Providers <span class="arrow">&#9662;</span>
+      </button>
+      <div class="dropdown-menu">
+        {providers.map(provider => {
+          const href = `/email/${makeKey(provider.name)}`;
+          const isCurrent = pathname === href;
+          return (
+            <a href={href} class:list={[{ current: isCurrent }]} aria-current={isCurrent ? 'page' : undefined}>{provider.name}</a>
+          );
+        })}
+      </div>
+    </div>
+    <a href="/email-security-tips" class:list={[{ current: pathname === '/email-security-tips' }]} aria-current={pathname === '/email-security-tips' ? 'page' : undefined}>
+      <icon-component iconName="privacy-report" iconSize="22px" />
+      Security Tips
     </a>
-    <a href="/about">
-        <icon-component iconName="about" iconHeight="22px" iconWidth="24px" />
+    <a href="/about" class:list={[{ current: pathname === '/about' }]} aria-current={pathname === '/about' ? 'page' : undefined}>
+      <icon-component iconName="about" iconSize="22px" />
       About
+    </a>
+    <a href="https://github.com/lissy93/email-comparison" target="_blank" rel="noopener noreferrer">
+      <icon-component iconName="github" iconWidth="22px" iconHeight="22px" />
+      GitHub
     </a>
   </div>
 </nav>
 
-<style lang="scss">
-  nav {
+<script>
+  const hamburger = document.querySelector('.main-nav .hamburger');
+  const nav = document.querySelector('.main-nav');
+  const dropdownTrigger = document.querySelector('.main-nav .dropdown-trigger');
+  const dropdown = document.querySelector('.main-nav .dropdown');
+
+  hamburger?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+  });
+
+  dropdownTrigger?.addEventListener('click', () => {
+    const expanded = dropdownTrigger.getAttribute('aria-expanded') === 'true';
+    dropdownTrigger.setAttribute('aria-expanded', String(!expanded));
+    dropdown?.classList.toggle('active');
+  });
+</script>
+
+<style lang="scss" is:global>
+  nav.main-nav {
     background: var(--primary);
     color: var(--background);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     padding: 0 1rem;
+    position: relative;
+
     a {
       color: var(--background);
+      text-decoration: none;
     }
-    display: flex;
+
+    icon-component {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
     .site-name {
       font-size: 2rem;
       font-weight: bold;
       display: flex;
       gap: 1rem;
-
     }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--background);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+    }
+
     .links {
       display: flex;
-      a {
-        padding: 0.25rem 0.5rem;
+      gap: 0.25rem;
+      align-items: center;
+
+      > a, .dropdown-trigger {
+        padding: 0.25rem 0.75rem;
         border-radius: 2rem;
-        transition: all 0.2s ease;
+        transition: background 0.2s ease;
+        white-space: nowrap;
         display: flex;
+        align-items: center;
         gap: 0.25rem;
+
         &:hover {
           background: var(--primary-darker);
+        }
+
+        &.current {
+          background: var(--primary-darker);
+        }
+      }
+    }
+
+    .dropdown {
+      position: relative;
+
+      .dropdown-trigger {
+        background: none;
+        border: none;
+        color: var(--background);
+        font-size: inherit;
+        font-family: inherit;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        .arrow {
+          font-size: 0.75em;
+        }
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--background);
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        min-width: 200px;
+        z-index: 100;
+        padding: 0.25rem 0;
+
+        a {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: var(--foreground-head);
+          transition: background 0.15s ease;
+
+          &:hover, &.current {
+            background: var(--primary);
+            color: var(--background);
+          }
+        }
+      }
+
+      &:hover .dropdown-menu,
+      &:focus-within .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav.main-nav {
+      flex-wrap: wrap;
+
+      .hamburger {
+        display: block;
+      }
+
+      .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0;
+
+        > a, .dropdown-trigger {
+          width: 100%;
+          padding: 0.5rem 1rem;
+          border-radius: 0;
+          box-sizing: border-box;
+        }
+      }
+
+      &.open .links {
+        display: flex;
+      }
+
+      .dropdown {
+        width: 100%;
+
+        .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          border-radius: 0;
+          background: var(--primary-darker);
+          display: none;
+          padding: 0;
+
+          a {
+            color: var(--background);
+            padding: 0.5rem 1.5rem;
+
+            &:hover {
+              background: var(--primary);
+            }
+          }
+        }
+
+        // On mobile, only show dropdown on click, not hover
+        &:hover .dropdown-menu {
+          display: none;
+        }
+        &.active .dropdown-menu {
+          display: block;
         }
       }
     }

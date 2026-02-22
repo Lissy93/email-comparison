@@ -1,0 +1,49 @@
+<section class="security-cta" aria-labelledby="security-cta-heading">
+  <h2 id="security-cta-heading">Email Security Tips</h2>
+  <p>
+    Beyond choosing a provider, there are steps you can take to better protect your email
+    — from using a custom domain, aliasing, PGP encryption and just securing your account.
+  </p>
+  <div class="button-row">
+    <a href="/email-security-tips" class="link-button">Read More  →</a>
+  </div>
+</section>
+
+<style lang="scss" is:global>
+  section.security-cta {
+    background: var(--foreground-lighter);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+    h2 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.4rem;
+    }
+
+    p {
+      color: var(--foreground-body);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+    }
+
+    .link-button {
+      background: var(--primary);
+      color: var(--background);
+      padding: 0.25rem 0.75rem;
+      border-radius: 2rem;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+      &:hover {
+        background: var(--primary-darker);
+        transform: translateY(-1px);
+      }
+    }
+  }
+</style>
