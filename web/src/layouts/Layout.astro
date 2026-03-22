@@ -23,6 +23,7 @@ const noIndexTag = '<meta name="robots" content="noindex">';
 		<MetaTags title={title} description={description} />
 		{dontIndex && <Fragment set:html={noIndexTag} />}
 		{ title && <title>{title}</title>}
+		<link rel="preconnect" href="https://pixelflare.cc" />
 	</head>
 	<body>
 		<slot />

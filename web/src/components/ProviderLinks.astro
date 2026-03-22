@@ -34,7 +34,7 @@ const services = sortServicesByPositives(transformMailProviders(mailProviders));
       <a href={`${baseUrl}email/${service.key}`}>
         <article title={makeSellingPointsString(service)}>
           <div class="top">
-            <img width="64" src={service.icon} alt={service.name} />
+            <img width="64" height="64" src={service.icon} alt={service.name} decoding="async" />
             <h3>{service.name}</h3>
           </div>      
         </article>
