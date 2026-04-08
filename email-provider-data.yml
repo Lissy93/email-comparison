@@ -921,3 +921,74 @@ mailProviders:
   activeDevelopment:
     text: 'Yes'
     level: 1
+
+# anon.li
+- name: anon.li
+  link: https://anon.li/
+  icon: https://anon.li/icon-512.png
+  links:
+    - { title: Privacy Policy, href: 'https://anon.li/privacy' }
+    - { title: Warrant Canary, href: 'https://anon.li/warrant-canary' }
+    - { title: Security, href: 'https://anon.li/security' }
+    - { title: Pricing, href: 'https://anon.li/pricing' }
+    - { title: Docs, href: 'https://anon.li/docs' }
+    - { title: Blog, href: 'https://anon.li/blog' }
+  description: >
+    A privacy-first platform offering two core products: Alias, an anonymous
+    email forwarding service that supports custom domains, PGP encryption,
+    and reply-via-alias; and Drop, a zero-knowledge end-to-end encrypted file
+    sharing service using AES-256-GCM with browser-side encryption. Uses
+    passwordless (magic link) authentication. All services are open source.
+    Note: anon.li is an alias/forwarding service and does not provide a hosted
+    mailbox or IMAP access.
+  jurisdiction:
+    text: Liechtenstein
+    level: 1
+  encryption:
+    text: |
+      PGP (aliases, optional, user-provided key)
+      AES-256-GCM (Drop, zero-knowledge)
+    level: 1
+  openSource:
+    text: 'Yes'
+    level: 1
+  onionSite:
+    text: 'No'
+    level: 3
+  pricing:
+    text: |
+      Free Plan - 10 aliases, 1 custom alias, 1 recipient, 5GB Drop bandwidth.
+      Plus from $3.29/mo (annual): 100 aliases, 3 custom domains, 5 recipients,
+      50GB Drop bandwidth.
+      Pro from $4.49/mo (annual): 250 aliases, 10 custom domains, 10 recipients,
+      250GB Drop bandwidth.
+    level: 1
+  customDomain:
+    text: |
+      Yes
+      (Plus Plan, $3.29/m)
+    level: 2
+  aliases:
+    text: |
+      Yes
+      (10 on Free, 100 on Plus, 250 on Pro)
+      Catch-all supported on custom domains
+    level: 1
+  webClientAccess:
+    text: 'No (forwarding only; no hosted mailbox or IMAP)'
+    level: 3
+  securityAudit:
+    text: 'No'
+    level: 3
+  acceptsCrypto:
+    text: Yes (annual plans only)
+    level: 2
+  personalInfoRequired:
+    text: Email address (for magic link auth and forwarding destination)
+    level: 2
+  mobileApp:
+    text: 'No (Web + CLI + browser extension)'
+    level: 3
+  activeDevelopment:
+    text: 'Yes'
+    level: 1
